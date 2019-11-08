@@ -6,6 +6,26 @@ const routes = [
     children: [
       { path: '', component: () => import('pages/Index.vue') }
     ]
+  },
+  {
+    path: '/firstPage',
+    component: () => import('pages/firstPage/firstPage.vue')
+  },
+  {
+    path: '/register',
+    component: () => import('pages/register/register.vue')
+  },
+  {
+    path: '/citaCita',
+    component: () => import('pages/citaCita/citaCita.vue')
+  },
+  {
+    path: '/salam',
+    component: () => import('pages/salam/salam.vue')
+  },
+  {
+    path: '/mulai',
+    component: () => import('pages/mulai/mulai.vue')
   }
 ]
 

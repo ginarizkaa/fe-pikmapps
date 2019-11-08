@@ -1,4 +1,4 @@
-# Pikmapps App (pikmapps)
+# Pikma App (pikmapps)
 
 A Quasar Framework app
 
@@ -12,10 +12,6 @@ npm install
 quasar dev
 ```
 
-### Lint the files
-```bash
-npm run lint
-```
 
 ### Build the app for production
 ```bash
