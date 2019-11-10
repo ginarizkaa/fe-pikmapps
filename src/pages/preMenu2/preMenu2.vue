@@ -1,19 +1,26 @@
 <template>
-  <div class="q-mt-xl q-pt-xl">
-    <div class="q-px-xl q-pt-xl">
-      <div class="q-mt-xl q-pt-xl">
-        <q-input rounded outlined label="Text..." />
+  <div>
+    <h3 class="trashhand bluec">
+      sampaikan
+      <br />
+      salam
+      <br />
+      pada masa
+      <br />
+      depan kamu!
+    </h3>
+    <center>
+      <div class="q-mt-lg">
+        <q-input class="btn-fixed-width" rounded outlined label="Text..." />
       </div>
-    </div>
+    </center>
   </div>
 </template>
 <style lang="stylus"></style>
 <script>
 export default {
   data() {
-    return {
-        
-    };
+    return {};
   }
 };
 </script>

@@ -1,10 +1,22 @@
 <template>
-  <div class="q-mt-xl q-pt-xl">
-    <div class="q-px-xl q-pt-xl">
-      <div class="q-mt-xl q-pt-xl">
-        <q-select rounded outlined bg-color="grey-2" v-model="model" :options="options"/>
+  <div>
+    <h3 class="trashhand bluec">
+      aku ingin
+      <br />
+      jadi...
+    </h3>
+    <center>
+      <div class="q-mt-lg">
+        <q-select
+          class="btn-fixed-width"
+          rounded
+          outlined
+          bg-color="grey-2"
+          v-model="model"
+          :options="options"
+        />
       </div>
-    </div>
+    </center>
   </div>
 </template>
 <style lang="stylus"></style>
@@ -13,7 +25,7 @@ export default {
   data() {
     return {
       model: "Pilih...",
-      options: ["Sosiolog", "Dokter", "Psikolog", "Programmer", "Arsitek"]
+      options: ["Sosiolog", "Dokter", "Psikolog", "Programmer", "Arsitek", "Guru", "Pengacara"]
     };
   }
 };
