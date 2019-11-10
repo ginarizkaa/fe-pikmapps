@@ -19,23 +19,31 @@
     <div style="text-align:center; margin-top: 10px">
       <img src="statics/img/man.png" height="180px" width="150px" />
     </div>
-    <div class="q-pa-md q-gutter-sm fixed-bottom">
+    <div style="margin-top: 5px">
       <center>
-        <q-btn unelevated rounded color="grey-3" class="fbg" text-color="primary" no-caps>
-          <q-icon name="img:statics/icon/fb_logo.png" />Masuk Dengan Facebook
-        </q-btn>
+        <q-btn
+          unelevated
+          rounded
+          color="grey-3"
+          class="fbg"
+          text-color="primary"
+          icon="img:statics/icon/fb_logo.png"
+          label="Masuk Dengan Facebook"
+          no-caps
+        />
         <br />
         <br />
-        <q-btn unelevated rounded color="grey-3" class="fbg" text-color="primary" no-caps>
-          <q-icon name="img:statics/icon/google_logo.png" />Masuk Dengan Google
-        </q-btn>
+        <q-btn
+          unelevated
+          rounded
+          color="grey-3"
+          class="fbg"
+          text-color="primary"
+          icon="img:statics/icon/google_logo.png"
+          label="Masuk Dengan Google"
+          no-caps
+        />
       </center>
     </div>
   </div>
 </template>
-<style lang="stylus">
-
-</style>
-<script>
-export default {};
-</script>
