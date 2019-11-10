@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3 class="trashhand bluec">
+    <h3 class="trashhand blue ctr">
       aku ingin
       <br />
       jadi...
@@ -8,7 +8,7 @@
     <center>
       <div class="q-mt-lg">
         <q-select
-          class="btn-fixed-width"
+          class="fbg"
           rounded
           outlined
           bg-color="grey-2"

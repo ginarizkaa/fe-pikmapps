@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3 class="trashhand bluec">
+    <h3 class="trashhand blue ctr">
       sampaikan
       <br />
       salam
@@ -11,7 +11,7 @@
     </h3>
     <center>
       <div class="q-mt-lg">
-        <q-input class="btn-fixed-width" rounded outlined label="Text..." />
+        <q-input class="fbg" rounded outlined label="Text..." />
       </div>
     </center>
   </div>

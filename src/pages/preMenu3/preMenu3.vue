@@ -2,12 +2,12 @@
   <div class="flex flex-center">
     <!-- <div class="q-mt-xl q-pt-xl"> -->
     <div class="q-pb-xl fixed-bottom">
-      <p class="neurad_l bluec q-mt-xl">
+      <p class="blue ctr q-mt-xl">
         Kamu bisa menjadi
         <br />apapun yang kamu mau!
         <br />
       </p>
-      <h4 class="trashhand bluec">
+      <h4 class="trashhand blue ctr">
         kamu hanya
         <br />perlu yakin
         <br />dan berusaha
@@ -18,7 +18,7 @@
       <center>
         <q-btn
           unelevated
-          class="btn-fixed-width"
+          class="fbg"
           rounded
           color="grey-4"
           text-color="primary"
