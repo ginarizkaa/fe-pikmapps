@@ -15,6 +15,10 @@ const routes = [
   {
     path: '/preMenu3',
     component: () => import('pages/preMenu3/preMenu3.vue')
+  },
+  {
+    path: '/menu',
+    component: () => import('pages/menu/menu.vue')
   }
 ]
 
