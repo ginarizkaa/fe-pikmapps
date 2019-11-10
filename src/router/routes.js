@@ -5,6 +5,10 @@ const routes = [
     component: () => import('pages/signin/signin.vue'),
   },
   {
+    path: '/signup',
+    component: () => import('pages/signup/signup.vue'),
+  },
+  {
     path: '/preMenu',
     component: () => import('pages/preMenu/preMenu.vue')
   },
