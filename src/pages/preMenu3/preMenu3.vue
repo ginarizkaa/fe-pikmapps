@@ -7,7 +7,7 @@
         <br />apapun yang kamu mau!
         <br />
       </p>
-      <h4 class="trashhand blue ctr">
+      <h4 class="font1 blue ctr">
         kamu hanya
         <br />perlu yakin
         <br />dan berusaha

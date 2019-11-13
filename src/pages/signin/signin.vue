@@ -4,7 +4,7 @@
       <img src="statics/img/pikma_logo.png" height="50px" width="100px" />
     </div>
     <div>
-      <h3 class="trashhand blue ctr">
+      <h3 class="font1 blue ctr">
         masa depan
         <br />kamu dimulai
         <br />disini
