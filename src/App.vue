@@ -1,6 +1,8 @@
-<template>
+<template >
   <div id="q-app">
-    <router-view />
+    <v-layout class="bg-global">
+      <router-view />
+    </v-layout>
   </div>
 </template>
 
