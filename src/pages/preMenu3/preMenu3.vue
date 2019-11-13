@@ -1,6 +1,5 @@
 <template>
-  <div class="flex flex-center">
-    <!-- <div class="q-mt-xl q-pt-xl"> -->
+  <div class="flex flex-center" style="background-image: url('statics/img/group193.png'); background-color:#F8F8F8; height:640px; margin-top:-50px;">
     <div class="q-pb-xl fixed-bottom">
       <p class="blue ctr q-mt-xl">
         Kamu bisa menjadi
@@ -14,7 +13,7 @@
         <br />secara konsisten
         <br />dari sekarang
       </h4>
-      <!-- </div> -->
+
       <center>
         <q-btn
           unelevated
@@ -24,7 +23,6 @@
           text-color="primary"
           size="md"
           label="MULAI"
-          align="around"
           no-caps
         />
       </center>
