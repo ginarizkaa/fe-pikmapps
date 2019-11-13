@@ -1,12 +1,13 @@
 <template>
+<div style="background-color: #171929;">
   <div class="pagein">
-    <div class="trashhand line40">
+    <div class="font1 line40">
       <p class="blue" style="font-size: 50px;">
         hallo (nama)!
         <br />salam kenal
       </p>
     </div>
-    <div class="neutrad_l line20">
+    <div class="font2 line20">
       <p
         class="blue"
         style="font-size: 25px;"
@@ -66,11 +67,13 @@
     <img src="statics/icon/next.png" height="40px" width="120px" />
     </div>
   </div>
+</div>
 </template>
 <script>
 export default {
   data () {
     return {
+      img: "statics/img/group193.png",
       model: null,
       model2:null,
       options: [

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3 class="trashhand blue ctr">
+    <h3 class="font1 blue ctr">
       aku ingin
       <br />
       jadi...
