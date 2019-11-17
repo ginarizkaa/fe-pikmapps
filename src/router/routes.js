@@ -23,7 +23,11 @@ const routes = [
   {
     path: '/menu',
     component: () => import('pages/menu/menu.vue')
-  }
+  },
+  {
+    path: '/layout',
+    component: () => import('layouts/MyLayout.vue'),
+  },
 ]
 
 // Always leave this as last one
