@@ -1,8 +1,6 @@
 <template>
-  <div id="q-app">
-    <v-layout class="bg-global" style="height: 640px;">
+  <div id="q-app" >
       <router-view />
-    </v-layout>
   </div>
 </template>
 
