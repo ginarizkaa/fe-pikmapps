@@ -1,12 +1,12 @@
 <template>
-  <div>
-    <h3 class="font1 blue ctr">
+  <div style="background-color:#F8F8F8;background-image: url('statics/img/group193.png'); height:640px; margin-top:-50px;">
+    <h3 class="font1 blue ctr" style="padding-top:50px;">
       aku ingin
       <br />
       jadi...
     </h3>
     <center>
-      <div class="q-mt-lg">
+      <div >
         <q-select
           class="fbg"
           rounded
@@ -17,6 +17,11 @@
         />
       </div>
     </center>
+    <div class="ctr" style="margin-top:20px">
+    <img src="statics/img/g4.png" style="height: 300px" />
+    
+    <img src="statics/img/g3.png" style="height: 300px" />
+    </div>
   </div>
 </template>
 <style lang="stylus"></style>

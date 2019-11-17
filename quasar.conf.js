@@ -47,7 +47,8 @@ module.exports = function (ctx) {
         'QIcon',
         'QAvatar',
         'QImg',
-        'QInput'
+        'QInput',
+        'QLayout'
       ],
       directives: [],
 

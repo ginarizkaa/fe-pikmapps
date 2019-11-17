@@ -28,6 +28,18 @@ const routes = [
     path: '/layout',
     component: () => import('layouts/MyLayout.vue'),
   },
+  {
+    path: '/ptSoal',
+    component: () => import('pages/ptSoal/ptSoal.vue')
+  },
+  {
+    path: '/ptPoin',
+    component: () => import('pages/ptPoin/ptPoin.vue')
+  },
+  {
+    path: '/tryOut',
+    component: () => import('pages/tryOut/tryOut.vue')
+  }
 ]
 
 // Always leave this as last one
