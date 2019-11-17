@@ -31,6 +31,10 @@ const routes = [
   {
     path: '/ptPoin',
     component: () => import('pages/ptPoin/ptPoin.vue')
+  },
+  {
+    path: '/tryOut',
+    component: () => import('pages/tryOut/tryOut.vue')
   }
 ]
 
