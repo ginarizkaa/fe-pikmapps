@@ -23,6 +23,14 @@ const routes = [
   {
     path: '/menu',
     component: () => import('pages/menu/menu.vue')
+  },
+  {
+    path: '/ptSoal',
+    component: () => import('pages/ptSoal/ptSoal.vue')
+  },
+  {
+    path: '/ptPoin',
+    component: () => import('pages/ptPoin/ptPoin.vue')
   }
 ]
 
