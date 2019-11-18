@@ -35,6 +35,18 @@ const routes = [
   {
     path: '/tryOut',
     component: () => import('pages/tryOut/tryOut.vue')
+  },
+  {
+    path: '/toUTBK',
+    component: () => import('pages/toUTBK/toUTBK.vue')
+  },
+  {
+    path: '/bankSoal',
+    component: () => import('pages/bankSoal/bankSoal.vue')
+  },
+  {
+    path: '/suratMasaDepan',
+    component: () => import('pages/suratMasaDepan/suratMasaDepan.vue')
   }
 ]
 
