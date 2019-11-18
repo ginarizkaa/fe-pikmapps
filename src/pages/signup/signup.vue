@@ -1,5 +1,5 @@
 <template>
-<div style="background-color: #171929;">
+<div style="background-image: url('/statics/img/group193.png'); background-repeat: no-repeat; background-position: center bottom;">
   <div class="pagein">
     <div class="font1 line40">
       <p class="blue" style="font-size: 50px;">
@@ -10,7 +10,7 @@
     <div class="font2 line20">
       <p
         class="blue"
-        style="font-size: 25px;"
+        style="font-size: 12px;"
       >Kami ingin tahu lebih tentang kamu. tak sabar untuk kita jadi #temanjoeang bareng!</p>
     </div>
 

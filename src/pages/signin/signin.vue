@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <div style="text-align:center; margin-top: 50px; margin-bottom:-30px">
-      <img src="statics/img/pikma_logo.png" height="50px" width="100px" />
+  <div style="background-image: url('/statics/img/group193.png'); background-repeat: no-repeat; background-position: center top;">
+    <div style="text-align:center; padding-top: 27.4px; margin-bottom:-30px">
+      <img src="statics/img/pikma_logo.png" height="53.1px" width="126.5px" />
     </div>
     <div>
       <h3 class="font1 blue ctr">

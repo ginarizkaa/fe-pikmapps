@@ -25,6 +25,10 @@ const routes = [
     component: () => import('pages/menu/menu.vue')
   },
   {
+    path: '/layout',
+    component: () => import('layouts/MyLayout.vue'),
+  },
+  {
     path: '/ptSoal',
     component: () => import('pages/ptSoal/ptSoal.vue')
   },
