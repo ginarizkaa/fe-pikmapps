@@ -34,7 +34,7 @@
         </q-item>
       </q-card>
 
-      <q-card class="my-card">
+      <q-card @click="navigate()" class="my-card">
         <q-item>
           <q-item-section avatar>
             <q-avatar style="height:70px;">
@@ -90,6 +90,12 @@ export default {
     return {
       items: [1, 2, 3, 4, 5]
     };
+  },
+
+  methods: {
+    navigate() {
+      this.$router.push("/tryOut")
+    }
   }
 };
 </script>

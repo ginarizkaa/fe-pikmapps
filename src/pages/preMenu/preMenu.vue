@@ -1,6 +1,6 @@
 <template>
-  <div @click="navigate()" style="background-color:#F8F8F8;background-image: url('statics/img/group193.png'); height:640px; margin-top:-50px;">
-    <h3 class="font1 blue ctr" style="padding-top:50px;">
+  <div style="background-color:#F8F8F8;background-image: url('statics/img/group193.png'); height:640px; margin-top:-50px;">
+    <h3 @click="navigate()"  class="font1 blue ctr" style="padding-top:50px;">
       aku ingin
       <br />
       jadi...
