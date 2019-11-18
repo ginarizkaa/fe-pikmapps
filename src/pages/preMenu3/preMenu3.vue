@@ -16,6 +16,7 @@
 
       <center>
         <q-btn
+          @click="navigate()" 
           unelevated
           class="fbg"
           rounded
@@ -30,6 +31,18 @@
   </div>
 </template>
 <style lang="stylus"></style>
+
+
 <script>
-export default {};
+export default {
+  data() {
+    return {};
+  },
+
+  methods: {
+    navigate() {
+      this.$router.push("/menu")
+    }
+  }
+};
 </script>
