@@ -9,7 +9,7 @@
 
       <q-item-section class="txt-left">
         <q-item-label class="font3 fs1" :class="`${color}`">{{title}}</q-item-label>
-        <q-item-label caption class="orange">{{caption}}</q-item-label>
+        <q-item-label caption class="orange font4 fs14">{{caption}}</q-item-label>
       </q-item-section>
     </q-item>
   </q-card>

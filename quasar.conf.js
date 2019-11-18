@@ -48,7 +48,8 @@ module.exports = function (ctx) {
         'QAvatar',
         'QImg',
         'QInput',
-        'QLayout'
+        'QLayout',
+        'QSpace'
       ],
       directives: [],
 

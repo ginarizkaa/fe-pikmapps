@@ -21,12 +21,24 @@ const routes = [
     component: () => import('pages/preMenu3/preMenu3.vue')
   },
   {
-    path: '/menu',
-    component: () => import('pages/menu/menu.vue')
+    path: '/layout',
+    component: () => import('layouts/mainmenu.vue'),
+    children : [
+      {
+        path: '/menu',
+        component: () => import('pages/menu/menu.vue')
+      },
+    ]
   },
   {
-    path: '/layout',
-    component: () => import('layouts/MyLayout.vue'),
+    path: '/lmodul',
+    component: () => import('layouts/lmodul.vue'),
+    children : [
+      {
+        path: '/modul',
+        component: () => import('pages/modul/modul.vue')
+      },
+    ]
   },
   {
     path: '/ptSoal',
