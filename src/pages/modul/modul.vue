@@ -4,25 +4,25 @@
       <grid
         title="Kelas 9"
         caption="Referensi lengkap soal per materi untuk belajar kamu!"
-        page="/mjk/Kelas 9"
+        page="/mj/Kelas 9"
         imgtext="XI"
       />
       <grid
         title="Kelas 10"
         caption="Referensi lengkap soal per materi untuk belajar kamu!"
-        page="/mjk/Kelas 10"
+        page="/mj/Kelas 10"
         imgtext="X"
       />
       <grid
         title="Kelas 11"
         caption="Referensi lengkap soal per materi untuk belajar kamu!"
-        page="/mjk/Kelas 11"
+        page="/mj/Kelas 11"
         imgtext="XI"
       />
       <grid
         title="Kelas 12"
         caption="Referensi lengkap soal per materi untuk belajar kamu!"
-        page="/mjk/Kelas 12"
+        page="/mj/Kelas 12"
         imgtext="XII"
       />
       <grid
@@ -41,7 +41,7 @@
 }
 </style>
 <script>
-import grid from "components/cmodul.vue";
+import grid from "components/modul/cmodul.vue";
 export default {
   components: {
     grid

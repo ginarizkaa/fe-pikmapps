@@ -1,0 +1,22 @@
+<template>
+  <div class="q-ma-md">
+    <grid page="/" title="TERMODINAMIKA" bab="BAB 1"/>
+    <grid page="/" title="LINGKARAN" bab="BAB 2"/>
+    <grid page="/" title="PERSAMAAN KUADRAT" bab="BAB 3"/>
+    <grid page="/" title="ENERGI" bab="BAB 4"/>
+    <grid page="/" title="LISTRIK" bab="BAB 5"/>
+    <grid page="/" title="BERAGAM" bab="BAB 6"/>
+    <grid page="/" title="MOMENTUM" bab="BAB 7"/>
+    <grid page="/" title="SENTRA PEGAS" bab="BAB 8"/>
+    <grid page="/" title="SQL" bab="BAB 9"/>
+
+  </div>
+</template>
+<script>
+import grid from "components/pelajaran/cbab.vue";
+export default {
+  components: {
+    grid
+  }
+};
+</script>

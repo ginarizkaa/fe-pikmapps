@@ -40,18 +40,23 @@ const routes = [
         name: 'modul'
       },
       {
-        path: '/mjk/:title',
-        component: () => import('pages/jurusan/mjk.vue'),
+        path: '/mj/:title',
+        component: () => import('pages/jurusan/mj.vue'),
         name: 'modul'
       },
       {
-        path: '/mpkipa/:title',
-        component: () => import('pages/pelajaran/mpkipa.vue'),
+        path: '/mpipa/:title',
+        component: () => import('pages/pelajaran/mpipa.vue'),
         name: 'modul'
       },
       {
-        path: '/mpkips/:title',
-        component: () => import('pages/pelajaran/mpkips.vue'),
+        path: '/mpips/:title',
+        component: () => import('pages/pelajaran/mpips.vue'),
+        name: 'modul'
+      },
+      {
+        path: '/fisika10/:title',
+        component: () => import('pages/pelajaran/fisika/kelas10/fisika10.vue'),
         name: 'modul'
       },
     ]
