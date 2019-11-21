@@ -4,25 +4,25 @@
       <grid
         title="Kelas 9"
         caption="Referensi lengkap soal per materi untuk belajar kamu!"
-        page="/"
+        page="/mjk9/Kelas 9"
         imgtext="XI"
       />
       <grid
         title="Kelas 10"
         caption="Referensi lengkap soal per materi untuk belajar kamu!"
-        page="/"
+        page="/mjk10/Kelas 10"
         imgtext="X"
       />
       <grid
         title="Kelas 11"
         caption="Referensi lengkap soal per materi untuk belajar kamu!"
-        page="/"
+        page="/mjk11/Kelas 11"
         imgtext="XI"
       />
       <grid
         title="Kelas 12"
         caption="Referensi lengkap soal per materi untuk belajar kamu!"
-        page="/"
+        page="/mjk12/Kelas 12"
         imgtext="XII"
       />
       <grid

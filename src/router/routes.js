@@ -21,22 +21,43 @@ const routes = [
     component: () => import('pages/preMenu3/preMenu3.vue')
   },
   {
-    path: '/layout',
-    component: () => import('layouts/mainmenu.vue'),
+    path: '',
+    component: () => import('layouts/layout.vue'),
     children : [
       {
         path: '/menu',
-        component: () => import('pages/menu/menu.vue')
+        component: () => import('pages/menu/menu.vue'),
+        name: 'mainmenu'
       },
-    ]
-  },
-  {
-    path: '/lmodul',
-    component: () => import('layouts/lmodul.vue'),
-    children : [
       {
-        path: '/modul',
-        component: () => import('pages/modul/modul.vue')
+        path: '/modul/:title',
+        component: () => import('pages/modul/modul.vue'),
+        name: 'modul'
+      },
+      {
+        path: '/jmodul/:title',
+        component: () => import('pages/jurusan/jmodul.vue'),
+        name: 'modul'
+      },
+      {
+        path: '/mjk9/:title',
+        component: () => import('pages/jurusan/kelas9/mjk9.vue'),
+        name: 'modul'
+      },
+      {
+        path: '/mjk10/:title',
+        component: () => import('pages/jurusan/kelas10/mjk10.vue'),
+        name: 'modul'
+      },
+      {
+        path: '/mjk11/:title',
+        component: () => import('pages/jurusan/kelas11/mjk11.vue'),
+        name: 'modul'
+      },
+      {
+        path: '/mjk12/:title',
+        component: () => import('pages/jurusan/kelas12/mjk12.vue'),
+        name: 'modul'
       },
     ]
   },
