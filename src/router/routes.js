@@ -1,7 +1,7 @@
 
 const routes = [
   {
-    path: '/',
+    path: '/signin',
     component: () => import('pages/signin/signin.vue'),
   },
   {
@@ -25,7 +25,12 @@ const routes = [
     component: () => import('layouts/layout.vue'),
     children : [
       {
-        path: '/menu',
+        path: '/test',
+        component: () => import('pages/test.vue'),
+        name: 'modul'
+      },
+      {
+        path: '/',
         component: () => import('pages/menu/menu.vue'),
         name: 'mainmenu'
       },
@@ -35,28 +40,18 @@ const routes = [
         name: 'modul'
       },
       {
-        path: '/jmodul/:title',
-        component: () => import('pages/jurusan/jmodul.vue'),
+        path: '/mjk/:title',
+        component: () => import('pages/jurusan/mjk.vue'),
         name: 'modul'
       },
       {
-        path: '/mjk9/:title',
-        component: () => import('pages/jurusan/kelas9/mjk9.vue'),
+        path: '/mpkipa/:title',
+        component: () => import('pages/pelajaran/mpkipa.vue'),
         name: 'modul'
       },
       {
-        path: '/mjk10/:title',
-        component: () => import('pages/jurusan/kelas10/mjk10.vue'),
-        name: 'modul'
-      },
-      {
-        path: '/mjk11/:title',
-        component: () => import('pages/jurusan/kelas11/mjk11.vue'),
-        name: 'modul'
-      },
-      {
-        path: '/mjk12/:title',
-        component: () => import('pages/jurusan/kelas12/mjk12.vue'),
+        path: '/mpkips/:title',
+        component: () => import('pages/pelajaran/mpkips.vue'),
         name: 'modul'
       },
     ]
