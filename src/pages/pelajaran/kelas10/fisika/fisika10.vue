@@ -1,6 +1,6 @@
 <template>
   <div class="q-ma-md">
-    <grid page="/" title="TERMODINAMIKA" bab="BAB 1"/>
+    <grid page="/mf10bab1/TERMODINAMIKA" title="TERMODINAMIKA" bab="BAB 1"/>
     <grid page="/" title="LINGKARAN" bab="BAB 2"/>
     <grid page="/" title="PERSAMAAN KUADRAT" bab="BAB 3"/>
     <grid page="/" title="ENERGI" bab="BAB 4"/>

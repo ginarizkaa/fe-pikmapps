@@ -56,9 +56,15 @@ const routes = [
       },
       {
         path: '/fisika10/:title',
-        component: () => import('pages/pelajaran/fisika/kelas10/fisika10.vue'),
+        component: () => import('pages/pelajaran/kelas10/fisika/fisika10.vue'),
         name: 'modul'
       },
+      {
+        path: '/mf10bab1/:title',
+        component: () => import('pages/materi/kelas10/fisika/bab1.vue'),
+        name: 'modul'
+      },
+      
     ]
   },
   {
