@@ -57,6 +57,7 @@ export default {
   components: {
     grid1,
     grid2
-  }
+  },
+
 };
 </script>

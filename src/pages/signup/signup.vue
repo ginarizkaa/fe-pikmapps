@@ -28,23 +28,23 @@
         </div>
         <q-form class="q-gutter-md">
           <p class="fusual">Nama</p>
-          <q-input rounded outlined size="md"/>
+          <q-input v-model="nama" rounded outlined size="md"/>
           <p class="fusual">No. Telp</p>
-          <q-input rounded outlined />
+          <q-input v-model="notelp" rounded outlined />
           <p class="fusual">Email</p>
-          <q-input rounded outlined bg-color="grey-4" />
+          <q-input v-model="email" rounded outlined bg-color="grey-4" />
           <div class="row">
             <div class="col-8">
               <p class="fusual2">Alamat</p>
-              <q-input rounded outlined />
+              <q-input v-model="alamat" rounded outlined />
             </div>
             <div class="col">
               <p class="fusual2">Kode Pos</p>
-              <q-input rounded outlined />
+              <q-input v-model="kodepos" rounded outlined />
             </div>
           </div>
           <p class="fusual">Sekolah</p>
-          <q-input rounded outlined />
+          <q-input rounded outlined v-model="sekolah"  />
           <div class="row">
             <div class="col">
               <p class="fusual2">Tingkat</p>
@@ -57,7 +57,7 @@
           </div>
 
           <center>
-            <q-btn unelevated rounded color="grey" label="Simpan" style="width: 90%"/>
+            <q-btn @click="navigate()" rounded color="grey" label="Simpan" style="width: 90%"/>
           </center>
         </q-form>
       </q-card-section>
@@ -73,6 +73,14 @@ export default {
   data () {
     return {
       img: "statics/img/group193.png",
+      nama: '',
+      notelp: '',
+      email: '',
+      alamat: '',
+      kodepos: '',
+      sekolah: '',
+      tingkat: '',
+      kelas: '',
       model: null,
       model2:null,
       options: [
@@ -82,6 +90,12 @@ export default {
         '1', '2', '3', '4', '5','6','7','8','9','10','11','12'
       ],
       
+    }
+  },
+
+  methods: {
+    navigate() {
+      this.$router.push("/preMenu")
     }
   }
 }
