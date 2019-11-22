@@ -9,8 +9,7 @@
     </div>
     <div class="font2 line20">
       <p
-        class="blue"
-        style="font-size: 12px;"
+        class="blue font4 fs14"
       >Kami ingin tahu lebih tentang kamu. tak sabar untuk kita jadi #temanjoeang bareng!</p>
     </div>
 

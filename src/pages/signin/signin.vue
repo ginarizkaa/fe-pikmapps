@@ -11,7 +11,7 @@
       </h3>
     </div>
     <div style="margin-top: -40px">
-      <p class="blue ctr">
+      <p class="blue ctr font4">
         Siapkan dan Uji
         <br />kemampuan kamu.
       </p>

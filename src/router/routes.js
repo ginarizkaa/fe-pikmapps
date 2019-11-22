@@ -1,7 +1,7 @@
 
 const routes = [
   {
-    path: '/',
+    path: '/signin',
     component: () => import('pages/signin/signin.vue'),
   },
   {
@@ -21,12 +21,51 @@ const routes = [
     component: () => import('pages/preMenu3/preMenu3.vue')
   },
   {
-    path: '/menu',
-    component: () => import('pages/menu/menu.vue')
-  },
-  {
-    path: '/layout',
-    component: () => import('layouts/MyLayout.vue'),
+    path: '',
+    component: () => import('layouts/layout.vue'),
+    children : [
+      {
+        path: '/test',
+        component: () => import('pages/test.vue'),
+        name: 'modul'
+      },
+      {
+        path: '/',
+        component: () => import('pages/menu/menu.vue'),
+        name: 'mainmenu'
+      },
+      {
+        path: '/modul/:title',
+        component: () => import('pages/modul/modul.vue'),
+        name: 'modul'
+      },
+      {
+        path: '/mj/:title',
+        component: () => import('pages/jurusan/mj.vue'),
+        name: 'modul'
+      },
+      {
+        path: '/mpipa/:title',
+        component: () => import('pages/pelajaran/mpipa.vue'),
+        name: 'modul'
+      },
+      {
+        path: '/mpips/:title',
+        component: () => import('pages/pelajaran/mpips.vue'),
+        name: 'modul'
+      },
+      {
+        path: '/fisika10/:title',
+        component: () => import('pages/pelajaran/kelas10/fisika/fisika10.vue'),
+        name: 'modul'
+      },
+      {
+        path: '/mf10bab1/:title',
+        component: () => import('pages/materi/kelas10/fisika/bab1.vue'),
+        name: 'modul'
+      },
+      
+    ]
   },
   {
     path: '/ptSoal',
