@@ -6,6 +6,7 @@
         caption="Referensi lengkap soal per materi untuk belajar kamu!"
         page="/mj/Kelas 9"
         imgtext="XI"
+        imgurl="statics/img/g4.png"
       />
       <grid
         title="Kelas 10"
@@ -41,7 +42,7 @@
 }
 </style>
 <script>
-import grid from "components/modul/cmodul.vue";
+import grid from "components/postTest/postTest.vue";
 export default {
   components: {
     grid

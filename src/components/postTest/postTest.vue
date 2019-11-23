@@ -1,23 +1,27 @@
 <template>
-<div class="q-pa-md">
-  <center>
   <q-card class="my-card" @click="navigate()">
     <q-item>
       <div class="row">
         <div class="col-4">
           <q-item-section avatar>
-            <q-item-label class="font3 orange fs60">IX</q-item-label>
+            <q-item-label class="font3 orange  fs60">{{imgtext}}</q-item-label>
           </q-item-section>
         </div>
+        <div class="col-4">
         <q-item-section class="txt-left">
-          <q-item-label class="font3 fs1 blue">KELAS 9</q-item-label>
-          <q-item-label caption class="orange font4 fs14">okasdvsav sdasdv</q-item-label>
+          <q-item-label class="font3 fs1 blue">{{title}}</q-item-label>
         </q-item-section>
+        </div>
+        <div class="col-4" style=" text-align: right">
+          <q-item-section avatar>
+            <q-avatar style="height:70px;">
+              <img src="statics/img/g4.png" />
+            </q-avatar>
+          </q-item-section>
+        </div>
       </div>
     </q-item>
   </q-card>
-  </center>
-</div>
 </template>
 <script>
 export default {
@@ -25,7 +29,8 @@ export default {
     title: "",
     caption: "",
     page: "",
-    imgtext: ""
+    imgtext: "",
+    imgurl: ""
   },
   methods: {
     navigate() {

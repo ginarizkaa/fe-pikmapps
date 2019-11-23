@@ -42,21 +42,8 @@
           icon="img:statics/icon/google_logo.png"
           label="Masuk Dengan Google"
           no-caps
-          @click="navigate()"
         />
       </center>
     </div>
   </div>
 </template>
-
-
-<script>
-export default {
-  
-  methods: {
-    navigate() {
-      this.$router.push("/signup")
-    }
-  }
-}
-</script>

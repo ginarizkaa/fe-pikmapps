@@ -1,13 +1,14 @@
 <template>
   <div>
     <div class="bg-greyy">
-      <q-btn flat class="yellow" size="xl" disable icon="arrow_left" />
-      <div class="q-ml-lg" style="margin-top:-20px;">
+      <div class="q-ml-lg">
+        <q-btn flat color="yellow-12" disable icon="arrow_left" />
         <div class="font3 yellow fs4">
-          TRY
-          <img style="height:50px;" src="statics/img/g10.png" />OUT
+          TRY <img style="height:50px;" src="statics/img/g10.png"/>OUT
         </div>
-        <div class="yellow" style="width:80%">Uji sejauh mana kemampuan untuk raih mimpimu!</div>
+        <div class="yellow" style="width:80%">
+          Uji sejauh mana kemampuan untuk raih mimpimu!
+        </div>
       </div>
     </div>
   </div>
