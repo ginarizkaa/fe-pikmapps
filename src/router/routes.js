@@ -64,14 +64,30 @@ const routes = [
         component: () => import('pages/materi/kelas10/fisika/bab1.vue'),
         name: 'modul'
       },
-      
+      {
+        path: '/fisika9/:submenu/:title',
+        component: () => import('pages/pelajaran/kelas9/fisika/fisika9.vue'),
+        name: 'modul'
+      },
+      {
+        path: '/mp/:submenu/:title',
+        component: () => import('pages/pelajaran/mp.vue'),
+        name: 'modul'
+      },
+      {
+        path: '/pt/:title',
+        component: () => import('pages/postTest/postTest.vue'),
+        name: 'modul'
+      },
+      {
+        path: '/pt/f9bab1/:title',
+        component: () => import('pages/ptSoal/ptSoal.vue'),
+        name: 'modul'
+      },
       
     ]
   },
-  {
-    path: '/postTest',
-    component: () => import('pages/postTest/postTest.vue')
-  },
+  
   {
     path: '/ptSoal',
     component: () => import('pages/ptSoal/ptSoal.vue')

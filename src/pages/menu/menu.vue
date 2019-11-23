@@ -1,7 +1,6 @@
 <template>
   <center>
     <div class="q-ma-md">
-      
       <grid1
         title="Modul"
         caption="Referensi lengkap soal per materi untuk belajar kamu!"
@@ -13,7 +12,7 @@
       <grid2
         title="POST TEST"
         caption="Evaluasi belajar kamu disini. Pastikan kamu dapat sesuatu!"
-        page="/"
+        page="/pt/Post Test"
         color="orange"
         imgurl="statics/img/g5.png"
       />

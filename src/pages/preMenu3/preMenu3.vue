@@ -1,34 +1,33 @@
 <template>
-  <div class="flex flex-center" style="background-image: url('statics/img/group193.png'); background-color:#F8F8F8; height:640px; margin-top:-50px;">
-    <div class="q-pb-xl fixed-bottom">
-      <p class="blue ctr q-mt-xl">
-        Kamu bisa menjadi
-        <br />apapun yang kamu mau!
+  <div>
+    <div class="ctr">
+      <div class="q-mt-xl">
+        <img src="statics/img/mulai1.png" />
         <br />
-      </p>
-      <h4 class="font1 blue ctr">
-        kamu hanya
-        <br />perlu yakin
-        <br />dan berusaha
-        <br />secara konsisten
-        <br />dari sekarang
-      </h4>
+      </div>
 
-      <center>
-        <q-btn
-          unelevated
-          class="fbg"
-          rounded
-          color="grey-4"
-          text-color="primary"
-          size="md"
-          label="MULAI"
-          no-caps
-        />
-      </center>
+      <div class="q-mt-xl">
+        <img src="statics/img/mulai2.png" style="width: 300px" />
+      </div>
+
+      <q-btn
+        unelevated
+        class="q-mt-xl fbg"
+        rounded
+        color="grey-4"
+        text-color="primary"
+        size="md"
+        label="MULAI"
+        no-caps
+      />
+
+      <div class="fixed-bottom">
+        <img src="statics/img/people.png" style="margin-bottom: -6px;" />
+      </div>
     </div>
   </div>
 </template>
+
 <style lang="stylus"></style>
 <script>
 export default {};
