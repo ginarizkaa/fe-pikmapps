@@ -1,20 +1,37 @@
 <template>
   <div>
-    <div class="bg-orangee">
-      <q-btn flat class="blue" size="xl" disable icon="arrow_left" />
-      <div class="q-ml-lg" style="margin-top:-20px;">
-        <div class="font3 dark-blue fs5">
-          BANK SOAL
-          <img style="height:50px;" src="statics/img/g9.png" />
-        </div>
-        <div class="blue" style="width:90%;">
-            Jas merah. Jangan sekali-sekali melupakan sejarah. Pelajari soal-soal tahun lalu!
+    <div class="bg-bluee">
+      <div class="q-mx-md q-pt-lg">
+        <div class="row">
+          <div class="col-9 q-pr-xs">
+            <div
+              class="yellow"
+            >Jas merah. Jangan sekali-sekali melupakan sejarah. Pelajari soal-soal tahun lalu!</div>
+          </div>
+          <div class="col-3 q-pr-lg">
+            <img style="height:70px;" src="statics/img/g8.png" />
+          </div>
         </div>
       </div>
+    </div>
+    <div class="q-ma-md">
+      <grid page="/" title="SBMPTN 2011" color="white" class="bg-bankSoal"/>
+      <grid page="/" title="SBMPTN 2012" color="white" class="bg-bankSoal"/>
+      <grid page="/" title="SBMPTN 2013" color="white" class="bg-bankSoal"/>
+      <grid2 page="/" title="SBMPTN 2014" color="white" class="bg-bankSoal"/>
+      <grid2 page="/" title="UJIAN TULIS UGM 2014" color="white" class="bg-bankSoal"/>
+      <grid2 page="/" title="SIMAK UI 2014" color="white" class="bg-bankSoal"/>
     </div>
   </div>
 </template>
 <style lang="stylus"></style>
 <script>
-export default {};
+import grid from "components/pelajaran/cpelajaran.vue";
+import grid2 from "components/bankSoal/cbankSoalLock.vue";
+export default {
+  components: {
+    grid,
+    grid2
+  },
+};
 </script>

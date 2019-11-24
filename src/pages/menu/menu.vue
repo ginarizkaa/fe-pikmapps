@@ -28,7 +28,7 @@
       <grid2
         title="BANK SOAL"
         caption="Referensi soal UTBK, Ujian Mandiri, Swasta dan Kedinasan."
-        page="/signup"
+        page="/bankSoal/Bank Soal"
         color="dark-blue"
         imgurl="statics/img/g7.png"
       /> 

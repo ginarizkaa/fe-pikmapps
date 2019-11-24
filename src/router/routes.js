@@ -84,6 +84,11 @@ const routes = [
         component: () => import('pages/ptSoal/ptSoal.vue'),
         name: 'modul'
       },
+      {
+        path: '/bankSoal/:title',
+        component: () => import('pages/bankSoal/bankSoal.vue'),
+        name: 'modul'
+      },
       
     ]
   },

@@ -2,7 +2,7 @@
   <q-card class="pelajaran" @click="navigate()">
     <q-item class="pelajaran">
       <q-item-section class="txt-left">
-        <q-item-label class="font3 fs30 orange">{{title}}</q-item-label>
+        <q-item-label class="font3 fs30 orange"  :class="`${color}`">{{title}}</q-item-label>
       </q-item-section>
     </q-item>
   </q-card>
@@ -12,7 +12,8 @@
 export default {
   props: {
     page: "",
-    title: ""
+    title: "",
+    color: "",
   },
   methods: {
     navigate() {
