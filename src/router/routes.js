@@ -77,7 +77,7 @@ const routes = [
       {
         path: '/pt/:title',
         component: () => import('pages/postTest/postTest.vue'),
-        name: 'modul'
+        name: 'postTest'
       },
       {
         path: '/pt/f9bab1/:title',

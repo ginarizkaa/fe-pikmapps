@@ -2,6 +2,7 @@
   <q-layout view="lHh Lpr lFf">
     <HMainMenu v-if="['mainmenu'].indexOf($route.name) > -1"/>
     <HModul v-if="['modul'].indexOf($route.name) > -1"/>
+    <HPostTest v-if="['postTest'].indexOf($route.name) > -1"/>
     <q-page-container>
       <router-view />
     </q-page-container>
@@ -12,11 +13,13 @@
 import HMainMenu from "./hstatics/mainmenu.vue"
 import FMain from "./footer/mainfooter.vue"
 import HModul from "./hdynamics/modul.vue"
+import HPostTest from "./hdynamics/postTest.vue"
 export default {
   components: {
     HMainMenu,
     FMain,
-    HModul
+    HModul,
+    HPostTest
   },
   
 }
