@@ -109,6 +109,10 @@ const routes = [
         component: () => import('pages/bankSoal/bankSoal.vue'),
         name: 'modul'
       },
+      {
+        path: '/tryOut',
+        component: () => import('pages/tryOut/tryOut.vue')
+      }
       
     ]
   },
@@ -121,10 +125,7 @@ const routes = [
     path: '/ptPoin',
     component: () => import('pages/ptPoin/ptPoin.vue')
   },
-  {
-    path: '/tryOut',
-    component: () => import('pages/tryOut/tryOut.vue')
-  }
+  
 ]
 
 // Always leave this as last one

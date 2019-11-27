@@ -20,7 +20,7 @@
       <grid1
         title="TRY OUT"
         caption="Persiapkan masa depan kamu dengan rajin-rajin try out."
-        page="/signup"
+        page="/tryOut"
         color="cyan"
         imgurl="statics/img/g6.png"
       /> 
