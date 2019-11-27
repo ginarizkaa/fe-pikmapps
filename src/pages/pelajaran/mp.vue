@@ -6,6 +6,10 @@
       <grid page="/" title="BIOLOGI"/>
       <grid page="/" title="BAHASA INDONESIA"/>
       <grid page="/" title="BAHASA INGGRIS"/>
+      <grid page="/" title="Ekonomi"/>
+      <grid page="/" title="Geografi"/>
+      <grid page="/" title="Sejarah"/>
+      <grid page="/" title="Sosiologi"/>
     </div>
     <div v-else-if="$route.params.submenu == 'postTest'">
       <grid page="/" title="MATEMATIKA"/>
@@ -13,6 +17,11 @@
       <grid page="/" title="BIOLOGI"/>
       <grid page="/" title="BAHASA INDONESIA"/>
       <grid page="/" title="BAHASA INGGRIS"/>
+      <grid page="/" title="Ekonomi"/>
+      <grid page="/" title="Geografi"/>
+      <grid page="/" title="Sejarah"/>
+      <grid page="/" title="Sosiologi"/>
+
     </div>
     <div v-else-if="$route.params.submenu == 'tryOut'">
 
