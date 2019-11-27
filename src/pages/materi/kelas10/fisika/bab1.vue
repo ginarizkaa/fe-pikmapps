@@ -20,7 +20,7 @@ export default {
   methods: {
     navigate() {
       let self = this;
-      self.$router.push("/posttest/Post Test");
+      self.$router.push("/");
     }
   }
 };

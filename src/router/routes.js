@@ -40,19 +40,34 @@ const routes = [
         name: 'modul'
       },
       {
-        path: '/mj/:title',
+        path: '/mj/:submenu/:title',
         component: () => import('pages/jurusan/mj.vue'),
         name: 'modul'
       },
       {
-        path: '/mpipa/:title',
+        path: '/pj/:submenu/:title',
+        component: () => import('pages/jurusan/mj.vue'),
+        name: 'postTest'
+      },
+      {
+        path: '/mpipa/:submenu/:title',
         component: () => import('pages/pelajaran/mpipa.vue'),
         name: 'modul'
       },
       {
-        path: '/mpips/:title',
+        path: '/mpips/:submenu/:title',
         component: () => import('pages/pelajaran/mpips.vue'),
         name: 'modul'
+      },
+      {
+        path: '/ppipa/:submenu/:title',
+        component: () => import('pages/pelajaran/mpipa.vue'),
+        name: 'postTest'
+      },
+      {
+        path: '/ppips/:submenu/:title',
+        component: () => import('pages/pelajaran/mpips.vue'),
+        name: 'postTest'
       },
       {
         path: '/fisika10/:title',
@@ -73,6 +88,11 @@ const routes = [
         path: '/mp/:submenu/:title',
         component: () => import('pages/pelajaran/mp.vue'),
         name: 'modul'
+      },
+      {
+        path: '/pp/:submenu/:title',
+        component: () => import('pages/pelajaran/mp.vue'),
+        name: 'postTest'
       },
       {
         path: '/pt/:title',

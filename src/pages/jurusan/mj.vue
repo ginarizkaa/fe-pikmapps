@@ -1,13 +1,25 @@
 <template>
   <div class="q-ma-md">
-    <grid1 page="/mpipa/Kelas 9" v-if="$route.params.title == 'Kelas 9'"/>
-    <grid2 page="/mpips/Kelas 9" v-if="$route.params.title == 'Kelas 9'"/>
-    <grid1 page="/mpipa/Kelas 10" v-if="$route.params.title == 'Kelas 10'"/>
-    <grid2 page="/mpips/Kelas 10" v-if="$route.params.title == 'Kelas 10'"/>
-    <grid1 page="/mpipa/Kelas 11" v-if="$route.params.title == 'Kelas 11'"/>
-    <grid2 page="/mpips/Kelas 11" v-if="$route.params.title == 'Kelas 11'"/>
-    <grid1 page="/mpipa/Kelas 12" v-if="$route.params.title == 'Kelas 12'"/>
-    <grid2 page="/mpips/Kelas 12" v-if="$route.params.title == 'Kelas 12'"/>
+    <div v-if="$route.params.submenu == 'modul'">
+      <grid1 page="/mpipa/modul/Kelas 9" v-if="$route.params.title == 'Kelas 9'"/>
+      <grid2 page="/mpips/modul/Kelas 9" v-if="$route.params.title == 'Kelas 9'"/>
+      <grid1 page="/mpipa/modul/Kelas 10" v-if="$route.params.title == 'Kelas 10'"/>
+      <grid2 page="/mpips/modul/Kelas 10" v-if="$route.params.title == 'Kelas 10'"/>
+      <grid1 page="/mpipa/modul/Kelas 11" v-if="$route.params.title == 'Kelas 11'"/>
+      <grid2 page="/mpips/modul/Kelas 11" v-if="$route.params.title == 'Kelas 11'"/>
+      <grid1 page="/mpipa/modul/Kelas 12" v-if="$route.params.title == 'Kelas 12'"/>
+      <grid2 page="/mpips/modul/Kelas 12" v-if="$route.params.title == 'Kelas 12'"/>
+    </div>
+    <div v-if="$route.params.submenu == 'postTest'">
+      <grid1 page="/ppipa/postTest/Kelas 9" v-if="$route.params.title == 'Kelas 9'"/>
+      <grid2 page="/ppips/postTest/Kelas 9" v-if="$route.params.title == 'Kelas 9'"/>
+      <grid1 page="/ppipa/postTest/Kelas 10" v-if="$route.params.title == 'Kelas 10'"/>
+      <grid2 page="/ppips/postTest/Kelas 10" v-if="$route.params.title == 'Kelas 10'"/>
+      <grid1 page="/ppipa/postTest/Kelas 11" v-if="$route.params.title == 'Kelas 11'"/>
+      <grid2 page="/ppips/postTest/Kelas 11" v-if="$route.params.title == 'Kelas 11'"/>
+      <grid1 page="/ppipa/postTest/Kelas 12" v-if="$route.params.title == 'Kelas 12'"/>
+      <grid2 page="/ppips/postTest/Kelas 12" v-if="$route.params.title == 'Kelas 12'"/>
+    </div>
   </div>
 </template>
 <script>

@@ -10,19 +10,19 @@
       <grid
         title="Kelas 10"
         caption="Referensi lengkap soal per materi untuk belajar kamu!"
-        page="/mj/Kelas 10"
+        page="/mj/modul/Kelas 10"
         imgtext="X"
       />
       <grid
         title="Kelas 11"
         caption="Referensi lengkap soal per materi untuk belajar kamu!"
-        page="/mj/Kelas 11"
+        page="/mj/modul/Kelas 11"
         imgtext="XI"
       />
       <grid
         title="Kelas 12"
         caption="Referensi lengkap soal per materi untuk belajar kamu!"
-        page="/mj/Kelas 12"
+        page="/mj/modul/Kelas 12"
         imgtext="XII"
       />
       <grid
