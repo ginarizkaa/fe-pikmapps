@@ -20,6 +20,12 @@
       <grid1 page="/ppipa/postTest/Kelas 12" v-if="$route.params.title == 'Kelas 12'"/>
       <grid2 page="/ppips/postTest/Kelas 12" v-if="$route.params.title == 'Kelas 12'"/>
     </div>
+    <div v-if="$route.params.submenu == 'tryOut'">
+      <grid1 page="/ppipa/postTest/Kelas 9" v-if="$route.params.title == 'TO UN'"/>
+      <grid2 page="/ppips/postTest/Kelas 9" v-if="$route.params.title == 'TO UN'"/>
+      <grid1 page="/ppipa/postTest/Kelas 10" v-if="$route.params.title == 'TO UTBK'"/>
+      <grid2 page="/ppips/postTest/Kelas 10" v-if="$route.params.title == 'TO UTBK'"/>
+    </div>
   </div>
 </template>
 <script>

@@ -41,13 +41,18 @@ const routes = [
       },
       {
         path: '/mj/:submenu/:title',
-        component: () => import('pages/jurusan/mj.vue'),
+        component: () => import('pages/jurusan/jurusan.vue'),
         name: 'modul'
       },
       {
         path: '/pj/:submenu/:title',
-        component: () => import('pages/jurusan/mj.vue'),
+        component: () => import('pages/jurusan/jurusan.vue'),
         name: 'postTest'
+      },
+      {
+        path: '/toj/:submenu/:title',
+        component: () => import('pages/jurusan/jurusan.vue'),
+        name: 'tryOut'
       },
       {
         path: '/mpipa/:submenu/:title',

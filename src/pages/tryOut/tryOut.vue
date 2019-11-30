@@ -12,8 +12,8 @@
       >Uji sejauh mana kemampuan untuk raih mimpimu!</div>
     </div>
     <div class="q-ma-md">
-      <grid page="/" title="TO UN" caption="Paket 1"/>
-      <grid page="/" title="TO UTBK" caption="Paket 1"/>
+      <grid page="/toj/tryOut/TO UN" title="TO UN" caption="Paket 1"/>
+      <grid page="/toj/tryOut/TO UTBK" title="TO UTBK" caption="Paket 1"/>
       <grid2 title="TO UTBK" caption="Paket 1"/>
       <grid2 title="TO UTBK" caption="Paket 1"/>
     </div>
