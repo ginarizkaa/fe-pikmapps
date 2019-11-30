@@ -1,10 +1,10 @@
 <template>
-  <q-card class="tryOut" @click="navigate()">
+  <q-card class="toPelajaran" @click="navigate()">
     <div class="row items-center">
         <q-item>
           <q-item-section class="txt-left">
             <q-item-label class="font3 fs35 gray2">{{title}}</q-item-label>
-            <q-item-label caption class="blue-tos font2 fs25">{{caption}}</q-item-label>
+            <q-item-label caption class="blue-tos font2 fs30">{{caption}}</q-item-label>
           </q-item-section>
         </q-item>
     </div>

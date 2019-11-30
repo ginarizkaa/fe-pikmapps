@@ -10,15 +10,15 @@ const routes = [
   },
   {
     path: '/preMenu',
-    component: () => import('pages/preMenu/preMenu.vue')
+    component: () => import('pages/menu/preMenu/preMenu.vue')
   },
   {
     path: '/preMenu2',
-    component: () => import('pages/preMenu2/preMenu2.vue')
+    component: () => import('pages/menu/preMenu2/preMenu2.vue')
   },
   {
     path: '/preMenu3',
-    component: () => import('pages/preMenu3/preMenu3.vue')
+    component: () => import('pages/menu/preMenu3/preMenu3.vue')
   },
   {
     path: '',
@@ -106,8 +106,8 @@ const routes = [
       },
       {
         path: '/pt/f9bab1/:title',
-        component: () => import('pages/ptSoal/ptSoal.vue'),
-        name: 'modul'
+        component: () => import('pages/postTest/ptSoal/ptSoal.vue'),
+        name: 'postTest'
       },
       {
         path: '/bankSoal/:title',
@@ -117,15 +117,19 @@ const routes = [
       {
         path: '/tryOut',
         component: () => import('pages/tryOut/tryOut.vue')
+      },
+      {
+        path: '/toUTBK',
+        component: () => import('pages/tryOut/toUTBK/toUTBK.vue')
+      },
+      {
+        path: '/toUN',
+        component: () => import('pages/tryOut/toUN/toUN.vue')
       }
       
     ]
   },
   
-  {
-    path: '/ptSoal',
-    component: () => import('pages/ptSoal/ptSoal.vue')
-  },
   {
     path: '/ptPoin',
     component: () => import('pages/ptPoin/ptPoin.vue')
