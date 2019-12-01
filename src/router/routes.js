@@ -124,7 +124,12 @@ const routes = [
       {
         path: '/toUN',
         component: () => import('pages/tryOut/toUN/toUN.vue')
-      }
+      },
+      {
+        path: '/grit',
+        component: () => import('pages/grit/grit.vue'),
+        name: 'mainmenu'
+      },
       
     ]
   },
