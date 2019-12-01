@@ -106,8 +106,7 @@ const routes = [
       },
       {
         path: '/pt/f9bab1/:title',
-        component: () => import('pages/postTest/ptSoal/ptSoal.vue'),
-        name: 'postTest'
+        component: () => import('pages/postTest/ptSoal/ptSoal.vue')
       },
       {
         path: '/bankSoal/:title',
