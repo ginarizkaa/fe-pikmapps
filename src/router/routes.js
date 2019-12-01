@@ -111,7 +111,11 @@ const routes = [
       {
         path: '/bankSoal/:title',
         component: () => import('pages/bankSoal/bankSoal.vue'),
-        name: 'modul'
+      },
+      {
+        path: '/sbmptn/:title',
+        component: () => import('pages/bankSoal/soal/sbmptn.vue'),
+        name: 'bankSoal'
       },
       {
         path: '/tryOut',

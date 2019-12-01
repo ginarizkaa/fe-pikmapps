@@ -4,6 +4,7 @@
     <HModul v-if="['modul'].indexOf($route.name) > -1"/>
     <HPostTest v-if="['postTest'].indexOf($route.name) > -1"/>
     <HTryOut v-if="['tryOut'].indexOf($route.name) > -1"/>
+    <HBankSoal v-if="['bankSoal'].indexOf($route.name) > -1"/>
     <q-page-container>
       <router-view />
     </q-page-container>
@@ -16,13 +17,15 @@ import FMain from "./footer/mainfooter.vue"
 import HModul from "./hdynamics/modul.vue"
 import HPostTest from "./hdynamics/postTest.vue"
 import HTryOut from "./hdynamics/tryOut.vue"
+import HBankSoal from "./hdynamics/bankSoal.vue"
 export default {
   components: {
     HMainMenu,
     FMain,
     HModul,
     HPostTest,
-    HTryOut
+    HTryOut,
+    HBankSoal
   },
   
 }
