@@ -122,6 +122,14 @@ const routes = [
         component: () => import('pages/tryOut/toUTBK/toUTBK.vue')
       },
       {
+        path: '/toUTBKSoal',
+        component: () => import('pages/tryOut/toUTBK/soal/toUTBKSoal.vue')
+      },
+      {
+        path: '/toUTBK2',
+        component: () => import('pages/tryOut/toUTBK/toUTBK2.vue')
+      },
+      {
         path: '/toUN',
         component: () => import('pages/tryOut/toUN/toUN.vue')
       }

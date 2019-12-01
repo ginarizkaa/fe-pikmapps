@@ -12,10 +12,10 @@
       >Uji sejauh mana kemampuan untuk raih mimpimu!</div>
     </div>
     <div class="q-ma-md">
-      <grid page="/" title="SKOLASTIK" caption="TO UTBK Paket 1"/>
-      <grid page="/" title="MATEMATIKA" caption="TO UTBK Paket 1"/>
-      <grid page="/" title="B. INGGIS" caption="TO UTBK Paket 1"/>
-      <grid page="/" title="B. INDONESIA" caption="TO UTBK Paket 1"/>
+      <grid page="/toUTBKSoal" title="SKOLASTIK" caption="TO UTBK Paket 1"/>
+      <grid page="/toUTBKSoal" title="MATEMATIKA" caption="TO UTBK Paket 1"/>
+      <grid page="/toUTBKSoal" title="B. INGGIS" caption="TO UTBK Paket 1"/>
+      <grid page="/toUTBKSoal" title="B. INDONESIA" caption="TO UTBK Paket 1"/>
     </div>
   </div>
 </template>
