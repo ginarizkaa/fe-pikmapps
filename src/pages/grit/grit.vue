@@ -25,10 +25,10 @@
         <div class="q-ma-md">
             <div class="row">
                 <div class="col-4 q-pb-md">
-                     <grid1 label1="Kenal" label2="Diri" />
+                     <grid1 label1="Kenal" label2="Diri" page="/grit/kd/Kenal Diri" />
                 </div>
                 <div class="col-4 q-pb-md">
-                    <grid1 label1="Kenal" label2="Minat" />
+                    <grid1 label1="Kenal" label2="Minat" page="/grit/km/Kenal Minat" />
                 </div>
                 <div class="col-4 q-pb-md">
                     <!-- jika hanya terdiri dari 1 kata, label2 diisi null saja -->
@@ -36,7 +36,7 @@
                 </div>
                 <!-- jika di lock pakai grid2 -->
                 <div class="col-4 q-pb-md">
-                    <grid2 label1="Saya" label2="null" />
+                    <grid2 label1="Saya" label2="null"/>
                 </div>
                 <div class="col-4 q-pb-md">
                     <grid2 label1="Surat" label2="null" />

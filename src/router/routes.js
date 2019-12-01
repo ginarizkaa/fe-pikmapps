@@ -142,6 +142,16 @@ const routes = [
         component: () => import('pages/grit/grit.vue'),
         name: 'mainmenu'
       },
+      {
+        path: '/grit/kd/:title',
+        component: () => import('pages/kenalDiri/kenalDiri.vue'),
+        name: 'grit'
+      },
+      {
+        path: '/grit/km/:title',
+        component: () => import('pages/kenalMinat/kenalMinat.vue'),
+        name: 'grit'
+      },
       
     ]
   },
