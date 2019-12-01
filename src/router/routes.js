@@ -10,15 +10,15 @@ const routes = [
   },
   {
     path: '/preMenu',
-    component: () => import('pages/preMenu/preMenu.vue')
+    component: () => import('pages/menu/preMenu/preMenu.vue')
   },
   {
     path: '/preMenu2',
-    component: () => import('pages/preMenu2/preMenu2.vue')
+    component: () => import('pages/menu/preMenu2/preMenu2.vue')
   },
   {
     path: '/preMenu3',
-    component: () => import('pages/preMenu3/preMenu3.vue')
+    component: () => import('pages/menu/preMenu3/preMenu3.vue')
   },
   {
     path: '',
@@ -40,19 +40,39 @@ const routes = [
         name: 'modul'
       },
       {
-        path: '/mj/:title',
-        component: () => import('pages/jurusan/mj.vue'),
+        path: '/mj/:submenu/:title',
+        component: () => import('pages/jurusan/jurusan.vue'),
         name: 'modul'
       },
       {
-        path: '/mpipa/:title',
+        path: '/pj/:submenu/:title',
+        component: () => import('pages/jurusan/jurusan.vue'),
+        name: 'postTest'
+      },
+      {
+        path: '/toj/:submenu/:title',
+        component: () => import('pages/jurusan/jurusan.vue'),
+        name: 'tryOut'
+      },
+      {
+        path: '/mpipa/:submenu/:title',
         component: () => import('pages/pelajaran/mpipa.vue'),
         name: 'modul'
       },
       {
-        path: '/mpips/:title',
+        path: '/mpips/:submenu/:title',
         component: () => import('pages/pelajaran/mpips.vue'),
         name: 'modul'
+      },
+      {
+        path: '/ppipa/:submenu/:title',
+        component: () => import('pages/pelajaran/mpipa.vue'),
+        name: 'postTest'
+      },
+      {
+        path: '/ppips/:submenu/:title',
+        component: () => import('pages/pelajaran/mpips.vue'),
+        name: 'postTest'
       },
       {
         path: '/fisika10/:title',
@@ -75,36 +95,45 @@ const routes = [
         name: 'modul'
       },
       {
+        path: '/pp/:submenu/:title',
+        component: () => import('pages/pelajaran/mp.vue'),
+        name: 'postTest'
+      },
+      {
         path: '/pt/:title',
         component: () => import('pages/postTest/postTest.vue'),
-        name: 'modul'
+        name: 'postTest'
       },
       {
         path: '/pt/f9bab1/:title',
-        component: () => import('pages/ptSoal/ptSoal.vue'),
-        name: 'modul'
+        component: () => import('pages/postTest/ptSoal/ptSoal.vue')
       },
       {
         path: '/bankSoal/:title',
         component: () => import('pages/bankSoal/bankSoal.vue'),
         name: 'modul'
       },
+      {
+        path: '/tryOut',
+        component: () => import('pages/tryOut/tryOut.vue')
+      },
+      {
+        path: '/toUTBK',
+        component: () => import('pages/tryOut/toUTBK/toUTBK.vue')
+      },
+      {
+        path: '/toUN',
+        component: () => import('pages/tryOut/toUN/toUN.vue')
+      }
       
     ]
   },
   
   {
-    path: '/ptSoal',
-    component: () => import('pages/ptSoal/ptSoal.vue')
-  },
-  {
     path: '/ptPoin',
     component: () => import('pages/ptPoin/ptPoin.vue')
   },
-  {
-    path: '/tryOut',
-    component: () => import('pages/tryOut/tryOut.vue')
-  }
+  
 ]
 
 // Always leave this as last one

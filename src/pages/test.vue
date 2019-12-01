@@ -9,6 +9,7 @@
             <q-item-label class="font3 orange fs60">IX</q-item-label>
           </q-item-section>
         </div>
+		
         <q-item-section class="txt-left">
           <q-item-label class="font3 fs1 blue">KELAS 9</q-item-label>
           <q-item-label caption class="orange font4 fs14">okasdvsav sdasdv</q-item-label>
