@@ -1,6 +1,6 @@
 <template>
-  <q-header elevated class="bg-header1">
-    <q-toolbar class="bg-header2">
+  <q-header elevated >
+    <q-toolbar class="bg-header5">
       <q-btn flat icon="img:statics/icon/back2.png" @click="$router.go(-1)" />
       <p class="font3 fs2 blue" style="margin-top:16px;">{{$route.params.title}}</p>
       <q-space />

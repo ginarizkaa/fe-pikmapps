@@ -49,9 +49,12 @@ module.exports = function (ctx) {
         'QImg',
         'QInput',
         'QLayout',
-        'QSpace'
+        'QSpace',
+        'QDialog'
       ],
-      directives: [],
+      directives: [
+        'ClosePopup'
+      ],
 
       // Quasar plugins
       plugins: []

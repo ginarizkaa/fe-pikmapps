@@ -1,6 +1,6 @@
 <template>
   <q-card class="bankSoalLock" @click="navigate()">
-    <div class="row items-center">
+    <div class="row items-center tryOutLock">
       <div class="col-9">
         <q-item>
           <q-item-section class="txt-left">
