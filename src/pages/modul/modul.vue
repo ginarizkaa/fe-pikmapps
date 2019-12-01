@@ -4,7 +4,7 @@
       <grid
         title="Kelas 9"
         caption="Referensi lengkap soal per materi untuk belajar kamu!"
-        page="/mp/Kelas 9"
+        page="/mp/modul/Kelas 9"
         imgtext="XI"
       />
       <grid
