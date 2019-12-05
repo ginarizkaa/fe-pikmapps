@@ -144,12 +144,42 @@ const routes = [
       },
       {
         path: '/grit/kd/:title',
-        component: () => import('pages/kenalDiri/kenalDiri.vue'),
+        component: () => import('pages/grit/kenalDiri/kenalDiri.vue'),
         name: 'grit'
       },
       {
         path: '/grit/km/:title',
-        component: () => import('pages/kenalMinat/kenalMinat.vue'),
+        component: () => import('pages/grit/kenalMinat/kenalMinat.vue'),
+        name: 'grit'
+      },
+      {
+        path: '/grit/m/:title',
+        component: () => import('pages/grit/mimpi/mimpi.vue'),
+        name: 'grit'
+      },
+      {
+        path: '/grit/m2/:title',
+        component: () => import('pages/grit/mimpi/mimpi2.vue'),
+        name: 'grit'
+      },
+      {
+        path: '/grit/saya/:title',
+        component: () => import('pages/grit/saya/saya.vue'),
+        name: 'grit'
+      },
+      {
+        path: '/grit/surat/:title',
+        component: () => import('pages/grit/surat/surat.vue'),
+        name: 'grit'
+      },
+      // {
+      //   path: '/grit/ar/:title',
+      //   component: () => import('pages/grit/artikel/artikel.vue'),
+      //   name: 'grit'
+      // },
+      {
+        path: '/grit/kom/:title',
+        component: () => import('pages/grit/komitmen/komitmen.vue'),
         name: 'grit'
       },
       

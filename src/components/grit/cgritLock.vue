@@ -32,7 +32,8 @@
 export default {
   props: {
     label1: "",
-    label2: ""
+    label2: "",
+    page: ""
   },
   methods: {
     navigate() {

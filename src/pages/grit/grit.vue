@@ -32,17 +32,20 @@
                 </div>
                 <div class="col-4 q-pb-md">
                     <!-- jika hanya terdiri dari 1 kata, label2 diisi null saja -->
-                    <grid1 label1="Mimpi" label2="null" />
+                    <grid1 label1="Mimpi" label2="null" page="/grit/m/Mimpi"/>
                 </div>
                 <!-- jika di lock pakai grid2 -->
                 <div class="col-4 q-pb-md">
-                    <grid2 label1="Saya" label2="null"/>
+                    <grid2 label1="Saya" label2="null" page="/grit/saya/Saya"/>
                 </div>
                 <div class="col-4 q-pb-md">
-                    <grid2 label1="Surat" label2="null" />
+                    <grid2 label1="Surat" label2="null" page="/grit/surat/Surat"/>
                 </div>
                 <div class="col-4 q-pb-md">
-                    <grid2 label1="Komit" label2="-men" />
+                    <grid2 label1="Komit" label2="-men" page="/grit/kom/Komitmen"/>
+                </div>
+                <div class="col-4 q-pb-md">
+                    <grid1 label1="Artikel" label2="null" page="/grit/ar/Artikel" />
                 </div>
             </div>
         </div>
