@@ -1,37 +1,50 @@
 
 const routes = [
   {
-    path: '/',
+    path: '/wel',
     component: () => import('pages/welcomeSwipe/welcome.vue'),
   },
   {
-    path: '/signin',
+    path: '/',
     component: () => import('pages/signin/signin.vue'),
   },
   {
+    path: '/masukkanKode',
+    component: () => import('pages/signin/masukkanKode.vue'),
+  },
+  {
     path: '/signup',
-    component: () => import('pages/signup/signup.vue'),
+    component: () => import('pages/signin/biodata.vue'),
   },
   {
     path: '/preMenu',
-    component: () => import('pages/menu/preMenu/preMenu.vue')
+    component: () => import('pages/signin/preMenu.vue')
   },
   {
     path: '/preMenu2',
-    component: () => import('pages/menu/preMenu2/preMenu2.vue')
+    component: () => import('pages/signin/preMenu2.vue')
   },
   {
     path: '/preMenu3',
-    component: () => import('pages/menu/preMenu3/preMenu3.vue')
+    component: () => import('pages/signin/preMenu3.vue')
+  },
+  {
+    path: '/temanPikma',
+    component: () => import('pages/temanPikma/temanPikma.vue')
   },
   {
     path: '',
     component: () => import('layouts/layout.vue'),
     children : [
+      // {
+      //   path: '/test',
+      //   component: () => import('pages/test.vue'),
+      //   name: 'modul'
+      // },
       {
-        path: '/test',
-        component: () => import('pages/test.vue'),
-        name: 'modul'
+        path: '/belajar',
+        component: () => import('pages/menu/belajar.vue'),
+        name: 'belajar'
       },
       {
         path: '/menu',

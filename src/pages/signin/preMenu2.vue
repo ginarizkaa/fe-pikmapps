@@ -10,9 +10,19 @@
       depan kamu!
     </h3>
     <center>
-      <div>
-        <q-input bg-color="grey-3" class="fbg" rounded outlined label="Text..." />
+      <div class="q-mx-xl">
+        <q-input rounded outlined size="md" autofocus="true"/>
       </div>
+      <q-btn
+        unelevated
+        rounded
+        color="yellow"
+        class="font2 q-mt-sm"
+        text-color="black"
+        label="submit"
+        no-caps
+        to="/preMenu3"
+      />
     </center>
   </div>
 </template>

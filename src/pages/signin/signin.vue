@@ -38,9 +38,10 @@
           color="grey-4"
           class="fbg"
           text-color="primary"
-          icon="img:statics/icon/fb_logo.png"
-          label="Masuk Dengan Facebook"
+          icon="img:statics/icon/email_logo.png"
+          label="Mulai Dengan Email"
           no-caps
+          to="/masukkanKode"
         />
         <q-btn
           unelevated
@@ -48,9 +49,10 @@
           color="grey-4 q-mt-sm"
           class="fbg"
           text-color="primary"
-          icon="img:statics/icon/google_logo.png"
-          label="Masuk Dengan Google"
+          icon="img:statics/icon/hp_logo.png"
+          label="Mulai Dengan No. HP"
           no-caps
+          to="/masukkanKode"
         />
       </div>
     </center>

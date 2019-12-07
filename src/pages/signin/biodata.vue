@@ -1,13 +1,12 @@
 <template>
-<div style="background-image: url('/statics/img/group193.png'); background-repeat: no-repeat; background-position: center bottom;">
-  <div class="pagein">
-    <div class="font1 line40">
+  <div class="q-pa-md">
+    <div class="font1 line40 q-pa-md">
       <p class="blue" style="font-size: 50px;">
-        hallo (nama)!
-        <br />salam kenal
+        mari jadi
+        <br />#temanjoeang!
       </p>
     </div>
-    <div class="font2 line20">
+    <div class="font2 line20 q-px-md">
       <p
         class="blue font4 fs14"
       >Kami ingin tahu lebih tentang kamu. tak sabar untuk kita jadi #temanjoeang bareng!</p>
@@ -57,16 +56,12 @@
           </div>
 
           <center>
-            <q-btn unelevated rounded color="grey" label="Simpan" style="width: 90%"/>
+            <q-btn unelevated rounded color="grey" label="Simpan" style="width: 90%" to="/preMenu"/>
           </center>
         </q-form>
       </q-card-section>
     </q-card>
-    <div class="ctr" style="margin-top:20px">
-    <img src="statics/icon/next.png" height="40px" width="120px" />
-    </div>
   </div>
-</div>
 </template>
 <style lang="stylus">
 
@@ -75,7 +70,6 @@
 export default {
   data () {
     return {
-      img: "statics/img/group193.png",
       model: null,
       model2:null,
       options: [

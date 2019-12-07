@@ -2,6 +2,7 @@
   <div class="q-pa-sm">
     <div>
       <q-carousel
+        style="margin-top:-30px;"
         swipeable
         control-color="blue"
         navigation
@@ -33,7 +34,7 @@
       <img src="statics/img/kalendar.png" width="330px" />
     </div>
     <div class="row flex flex-center q-pt-lg">
-      <div class="col-4 ctr" style="height:100px" v-on:click="navigate('/signin')" >
+      <div class="col-4 ctr" style="height:100px" @click="navigate('/signin')" >
         <img class="q-pt-xs" src="statics/img/g12.png" width="60px" />
         <p style="margin-top:2px" class="q-pb-xs">Modul</p>
       </div>

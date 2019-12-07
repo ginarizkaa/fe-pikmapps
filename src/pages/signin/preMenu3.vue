@@ -12,13 +12,14 @@
 
       <q-btn
         unelevated
-        class="q-mt-xl fbg"
+        class="q-mt-xl fbg font4"
         rounded
-        color="grey-4"
-        text-color="primary"
+        color="yellow"
+        text-color="black"
         size="md"
-        label="MULAI"
+        label="MULAI SEKARANG!"
         no-caps
+        to="/belajar"
       />
 
       <div class="fixed-bottom">
