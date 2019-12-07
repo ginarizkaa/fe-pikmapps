@@ -3,6 +3,8 @@
     <div class="q-gutter-md">
       <q-carousel
         v-model="slide"
+        transition-prev="scale"
+        transition-next="scale"
         swipeable
         animated
         control-color="yellow"
@@ -30,12 +32,12 @@
         </q-carousel-slide>
       </q-carousel>
     </div>
-    <center>
-      <div style="margin-top: 5px; width:280px">
+    <div style="margin-top: 5px">
+      <center>
         <q-btn
           unelevated
           rounded
-          color="grey-4"
+          color="grey-5"
           class="fbg"
           text-color="primary"
           icon="img:statics/icon/fb_logo.png"
@@ -45,23 +47,25 @@
         <q-btn
           unelevated
           rounded
-          color="grey-4 q-mt-sm"
+          color="grey-5 q-mt-sm"
           class="fbg"
           text-color="primary"
           icon="img:statics/icon/google_logo.png"
           label="Masuk Dengan Google"
           no-caps
         />
-      </div>
-    </center>
+      </center>
+    </div>
   </div>
+  
 </template>
 <script>
 export default {
   data() {
     return {
-      slide: "style"
-    };
+      slide: "style",
+      
+      };
   }
 };
 </script>

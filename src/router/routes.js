@@ -1,6 +1,10 @@
 
 const routes = [
   {
+    path: '/',
+    component: () => import('pages/welcomeSwipe/welcome.vue'),
+  },
+  {
     path: '/signin',
     component: () => import('pages/signin/signin.vue'),
   },
@@ -30,7 +34,7 @@ const routes = [
         name: 'modul'
       },
       {
-        path: '/',
+        path: '/menu',
         component: () => import('pages/menu/menu.vue'),
         name: 'mainmenu'
       },
