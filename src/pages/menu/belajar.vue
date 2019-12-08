@@ -17,7 +17,7 @@
         transition-next="slide-left"
       >
         <q-carousel-slide name="style" class="column no-wrap flex-center">
-          <img src="statics/img/menu1.png" class="q-pt-lg"/>
+          <img src="statics/img/menu1.png" class="q-pt-lg" />
         </q-carousel-slide>
         <q-carousel-slide name="tv" class="column no-wrap flex-center">
           <img src="statics/img/sign3.png" class="q-pt-lg" />
@@ -34,35 +34,33 @@
       <img src="statics/img/kalendar.png" width="330px" />
     </div>
     <div class="row flex flex-center q-pt-lg">
-      <div class="col-4 ctr" style="height:100px" @click="navigate('/signin')" >
-        <img class="q-pt-xs" src="statics/img/g12.png" width="60px" />
-        <p style="margin-top:2px" class="q-pb-xs">Modul</p>
+      <div class="q-ma-xs">
+        <grid title="Modul" height="70" width="80" imgurl="statics/img/g12.png" page="/modul/Modul" />
       </div>
-      <div class="col-4 ctr" style="height:100px">
-        <img class="q-pt-xs" src="statics/img/g13.png" width="80px" />
-        <p style="margin-top:3px" class="q-pb-xs">Post Test</p>
+      <div class="q-ma-xs">
+        <grid title="Post Test" height="70" width="80" imgurl="statics/img/g13.png" page="/pt/Post Test" />
       </div>
-      <div class="col-4 ctr" style="height:100px">
-        <img class="q-pt-xs" src="statics/img/g16.png" width="80px" />
-        <p style="margin-top:15px" class="q-pb-xs">Try Out</p>
+      <div class="q-ma-xs">
+        <grid title="Try Out" height="70" width="80" imgurl="statics/img/g16.png" page="/tryOut" />
       </div>
-      <div class="col-4 ctr q-mt-md" style="height:100px">
-        <img src="statics/img/g15.png" width="80px" />
-        <p style="margin-top:35px">Bank Soal</p>
+      <div class="q-ma-xs">
+        <grid title="Bank Soal" height="70" width="80" imgurl="statics/img/g15.png" page="/bankSoal/Bank Soal" />
       </div>
-      <div class="col-4 ctr q-mt-md" style="height:100px">
-        <img src="statics/img/g14.png" width="80px" />
-        <p style="margin-top:15px">Konsul</p>
+      <div class="q-ma-xs">
+        <grid title="Konsul" height="70" width="80" imgurl="statics/img/g14.png" page="/" />
       </div>
-      <div class="col-4 ctr q-mt-md" style="height:100px">
-        <img src="statics/img/g17.png" width="60px" />
-        <p style="margin-top:-2px">Rapor</p>
+      <div class="q-ma-xs">
+        <grid title="Rapor" height="70" width="60" imgurl="statics/img/g17.png" page="/" />
       </div>
     </div>
   </div>
 </template>
 <script>
+import grid from "components/menu/button.vue";
 export default {
+  components: {
+    grid
+  },
   data() {
     return {
       slide: "style"
