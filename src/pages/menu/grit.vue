@@ -4,7 +4,7 @@
       <img src="statics/img/temanPikma1.png" />
     </div>
     <div class="flex flex-center">
-      <q-card class="my-card">
+      <q-card class="my-cardgrit">
         <q-card-section class="bg-yellow font2 fs20 blue" style="height:50px">
           <div style="margin-top:-7px">#ceritaalumni</div>
         </q-card-section>
@@ -34,6 +34,15 @@
             <div class="col-4 q-pb-md">
               <grid1 label1="Galau" label2="null" page="/grit/galau/Galau" />
             </div>
+            <div class="col-4 q-pb-md">
+              <grid1 label1="Tips" label2="Trik" page="/grit/tipsTrik/Tips dan Trik" />
+            </div>
+            <div class="col-4 q-pb-md">
+              <grid1 label1="Susun" label2="Jadwal" page="/grit/sj/Susun Jadwal" />
+            </div>
+            <div class="col-4 q-pb-md">
+              <grid1 label1="Kontak" label2="Alumni" page="/grit/ka/Kontak Alumni" />
+            </div>
             <!-- <div class="col-4 q-pb-md">
               <grid1 label1="Kenal" label2="Minat" page="/grit/km/Kenal Minat" />
             </div> -->
@@ -61,10 +70,10 @@
   </div>
 </template>
 <style lang="stylus">
-.my-card {
+.my-cardgrit {
   width: 100%;
   max-width: 330px;
-  height: 115px !important;
+  height: 115px;
 }
 </style>
 <script>
@@ -80,7 +89,7 @@ export default {
     return {
       lorem:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      alumni: '/signup'
+      alumni: 'grit/ca/Cerita Alumni'
     };
   },
   methods: {

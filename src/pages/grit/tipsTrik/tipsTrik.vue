@@ -24,7 +24,7 @@
       v-model="search"
       debounce="500"
       filled
-      placeholder="Tanyakan masalahmu..."
+      placeholder="Pertanyaanmu..."
       color="yellow"
       bg-color="teal-12"
       class="text-white"
@@ -74,30 +74,35 @@ export default {
       search: "",
       dataTanya: [
         {
-          tanya: "Kira-Kira Saya Cocoknya Masuk Apa Ya?",
+          tanya: "Gak bisa matematika, harus bagaimana?",
           jawab:
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius reprehenderit eos corrupti commodi magni quaerat ex numquam, dolorum officiis modi facere maiores architecto suscipit iste eveniet doloribus ullam aliquid."
         },
         {
-          tanya: "Pilih Universitas atau Jurusan dulu Ya?",
+          tanya: "Cara SKS yang efektif gimana?",
           jawab: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
         },
         {
-          tanya: "Saya Terjebak di IPA, Mampukah ke IPS?",
+          tanya: "Gimana cara belajar bahasa inggris paling benar?",
           jawab:
             "Quidem, eius reprehenderit eos corrupti commodi magni quaerat ex numquam."
         },
         {
-          tanya: "Saya Perempuan, Mending dalam Kota Saja?",
+          tanya: "Kenapa gak masuk-masuk kalau belajar?",
           jawab: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-        }
+        },
+        {
+          tanya: "Belajar sama temen atau sendiri?",
+          jawab:
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius reprehenderit eos corrupti commodi magni quaerat ex numquam, dolorum officiis modi facere maiores architecto suscipit iste eveniet doloribus ullam aliquid."
+        },
       ]
     };
   },
   computed: {
     filteredTanya: function() {
       return this.dataTanya.filter(idx => {
-        return (idx.tanya).toLowerCase().match((this.search).toLowerCase());
+        return (idx.tanya).toLowerCase().match(this.search);
       });
     }
   }
