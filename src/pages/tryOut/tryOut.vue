@@ -12,10 +12,11 @@
       >Uji sejauh mana kemampuan untuk raih mimpimu!</div>
     </div>
     <div class="q-ma-md">
-      <grid page="/toj/tryOut/TO UN" title="TO UN" caption="Paket 1"/>
-      <grid page="/toj/tryOut/TO UTBK" title="TO UTBK" caption="Paket 1"/>
-      <grid2 title="TO UTBK" caption="Paket 1"/>
-      <grid2 title="TO UTBK" caption="Paket 1"/>
+      <grid page="/ketentuanTest/TO UN 621" title="TO UN" caption="Kode 621"/>
+      <grid2 title="TO UN" caption="Kode 621"/>
+      <grid page="/ketentuanTest/TO UTBK 721" title="TO UTBK" caption="Kode 721"/>
+      <grid2 title="TO UTBK" caption="Kode 721"/>
+      <grid2 title="TO STAN" caption="Kode 732"/>
     </div>
   </div>
 </template>

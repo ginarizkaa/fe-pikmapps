@@ -21,10 +21,10 @@
       <grid2 page="/ppips/postTest/Kelas 12" v-if="$route.params.title == 'Kelas 12'"/>
     </div>
     <div v-if="$route.params.submenu == 'tryOut'">
-      <grid1 page="/toUN" v-if="$route.params.title == 'TO UN'"/>
-      <grid2 page="/toUN" v-if="$route.params.title == 'TO UN'"/>
-      <grid1 page="/toUTBK" v-if="$route.params.title == 'TO UTBK'"/>
-      <grid2 page="/toUTBK" v-if="$route.params.title == 'TO UTBK'"/>
+      <grid1 page="/toUN" v-if="$route.params.title == 'TO UN 621'"/>
+      <grid2 page="/toUN" v-if="$route.params.title == 'TO UN 621'"/>
+      <grid1 page="/toUTBK" v-if="$route.params.title == 'TO UTBK 721'"/>
+      <grid2 page="/toUTBK" v-if="$route.params.title == 'TO UTBK 721'"/>
     </div>
   </div>
 </template>

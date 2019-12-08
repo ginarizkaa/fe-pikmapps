@@ -33,10 +33,12 @@
       <img src="statics/img/kalendar.png" width="330px" />
     </div>
     <div class="row flex flex-center q-pt-lg">
+      <q-btn flat @click="$router.go(-1)">
       <div class="col-4 ctr" style="height:100px" v-on:click="navigate('/signin')" >
         <img class="q-pt-xs" src="statics/img/g12.png" width="60px" />
         <p style="margin-top:2px" class="q-pb-xs">Modul</p>
       </div>
+      </q-btn>
       <div class="col-4 ctr" style="height:100px">
         <img class="q-pt-xs" src="statics/img/g13.png" width="80px" />
         <p style="margin-top:3px" class="q-pb-xs">Post Test</p>

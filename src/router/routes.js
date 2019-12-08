@@ -139,6 +139,15 @@ const routes = [
         component: () => import('pages/tryOut/tryOut.vue')
       },
       {
+        path: '/kodeTO',
+        component: () => import('pages/tryOut/kodeTO.vue')
+      },
+      {
+        path: '/ketentuanTest/:title/',
+        component: () => import('pages/tryOut/ketentuanTest.vue'),
+        name: 'tryOut'
+      },
+      {
         path: '/toUTBK',
         component: () => import('pages/tryOut/toUTBK/toUTBK.vue')
       },

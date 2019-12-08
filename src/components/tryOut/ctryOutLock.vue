@@ -1,22 +1,25 @@
 <template>
   <q-card class="tryOut" @click="navigate()">
-    <div class="row items-center tryOutLock">
-      <div class="col-9">
+    <div class="row items-center">
+      <div class="col-7">
         <q-item>
           <q-item-section class="txt-left">
-            <q-item-label class="font3 fs35 gray2 ">{{title}}</q-item-label>
-            <q-item-label caption class="blue-tos font2 fs20">{{caption}}</q-item-label>
+            <q-item-label class="font3 fs35 blue ">{{title}}</q-item-label>
+            <q-item-label caption class="gray2 font2 fs25" style="margin-top:-8px">{{caption}}</q-item-label>
           </q-item-section>
         </q-item>
       </div>
       <div class="col-3">
-        <q-item>
-          <q-item-section >
-            <div class="ctr" >
-              <img src="statics/img/lock.png" style="height: 40px" />
+            <div class="ctr" style="margin-left:-55px">
+              <img src="statics/img/group19.png" style="height: 80px" />
             </div>
-          </q-item-section>
-        </q-item>
+      </div>
+      <div class="col-2">
+            <div class="ctr" style="margin-left:-45px">
+              <img src="statics/img/lock.png" style="height: 30px;width:25px" />
+              <div style="height:1px"/>
+              <q-btn rounded color="secondary" label="Daftar" no-caps @click="daftarTO()" size="10px"/>
+            </div>
       </div>
     </div>
   </q-card>
@@ -33,6 +36,10 @@ export default {
     navigate() {
       let self = this;
       self.$router.push({ path: self.page });
+    },
+    daftarTO() {
+      let self = this;
+      self.$router.push("/kodeTO");
     }
   }
 };
