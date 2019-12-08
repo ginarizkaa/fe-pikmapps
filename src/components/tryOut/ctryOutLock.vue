@@ -39,7 +39,7 @@ export default {
     },
     daftarTO() {
       let self = this;
-      self.$router.push("/daftarTO");
+      self.$router.push("/kodeTO");
     }
   }
 };
