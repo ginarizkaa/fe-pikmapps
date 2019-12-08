@@ -148,6 +148,11 @@ const routes = [
         name: 'tryOut'
       },
       {
+        path: '/tpstka/:title/',
+        component: () => import('pages/tryOut/tpstka/tpstka.vue'),
+        name: 'tryOut'
+      },
+      {
         path: '/toUTBK',
         component: () => import('pages/tryOut/toUTBK/toUTBK.vue')
       },
