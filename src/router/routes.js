@@ -156,7 +156,7 @@ const routes = [
       },
       {
         path: '/grit',
-        component: () => import('pages/grit/grit.vue'),
+        component: () => import('pages/menu/grit.vue'),
         name: 'mainmenu'
       },
       {
@@ -197,6 +197,11 @@ const routes = [
       {
         path: '/grit/kom/:title',
         component: () => import('pages/grit/komitmen/komitmen.vue'),
+        name: 'grit'
+      },
+      {
+        path: '/grit/galau/:title',
+        component: () => import('pages/grit/galau/galau.vue'),
         name: 'grit'
       },
       

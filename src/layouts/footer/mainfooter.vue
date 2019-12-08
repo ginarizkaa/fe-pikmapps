@@ -8,10 +8,10 @@
         </div>
       </div>
       <div class="col">
-        <q-btn flat icon="img:statics/icon/menu2.png" style="font-size: 1.5rem;" to="/signup" />
+        <q-btn flat icon="img:statics/icon/menu2.png" style="font-size: 1.5rem;" to="/grit" />
       </div>
       <div class="col">
-        <q-btn flat icon="img:statics/icon/menu3.png" style="font-size: 1.5rem;" to="/grit" />
+        <q-btn flat icon="img:statics/icon/menu3.png" style="font-size: 1.5rem;" to="/temanPikma" />
       </div>
       <div class="col">
         <q-btn flat icon="img:statics/icon/menu4.png" style="font-size: 1.5rem;" to="/signin" />

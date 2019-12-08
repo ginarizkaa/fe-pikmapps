@@ -26,7 +26,16 @@
     </center>
   </div>
 </template>
-<style lang="stylus"></style>
+<style lang="stylus">
+//modifikasi
+.q-field__control{
+  height:25px;
+  font-family: 'NeutraTextBook';
+}
+.q-field__native, .q-field__prefix, .q-field__suffix {
+  color: rgb(71, 96, 172);
+}
+</style>
 <script>
 export default {
   data() {
