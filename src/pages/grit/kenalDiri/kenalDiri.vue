@@ -1,39 +1,48 @@
 <template>
   <div>
-    <q-card class="q-ma-lg">
-      <q-card-section>
-        <q-form class="q-gutter-md">
-          <p class="fusual">Kalau kamu gak punya nama, kamu pengen orang lain manggil kamu apa?<br /> ex: si jago desgin</p>
-          <q-input rounded outlined/>
-          <p class="fusual">Tuliskan 5 hal yang kamu senangi (boleh benda atau kegiatan)</p>
-          <q-input rounded outlined />
-          <p class="fusual">Tuliskan 5 hal yang paling kamu ga senangi</p>
-          <q-input rounded outlined />
-          <p class="fusual">Tuliskan 3 hal yang ingin kamu lakukan</p>
-          <q-input rounded outlined />
-          <p class="fusual">Tuliskan 3 hal yang ingin kamu lakukan untuk diri kamu sendiri</p>
-          <q-input rounded outlined />
-          <p class="fusual">Tuliskan 3 kegiatan yang bisa bikin mood kamu jadi senang</p>
-          <q-input rounded outlined />
-          
-
-          <center>
-            <img src="statics/img/g4.png" height="60px" width="40px" style="bottom : 0px" />
-            <q-btn unelevated rounded color="grey" label="Simpan" style="width: 90%"/>
-          </center>
-        </q-form>
+    <div class="q-mt-md q-mx-sm">
+        <img src="statics/img/kenalDiri.png" />
+    </div>
+    <div class="q-mx-sm">
+      <a href="https://www.16personalities.com/id">
+        <img src="statics/img/testMBTI.png" width="340px" />
+      </a>
+    </div>
+    <q-card class="q-mx-md">
+      <q-card-section class="bg-color-greyy text-black">
+        <div class="font2 ctr">APA HASIL TEST KAMU?</div>
+      </q-card-section>
+        <q-card-section>
+            <div class="row ctr">
+                <div class="col-3"><grid page="" color="yellow" label="ENFJ"/></div>
+                <div class="col-3"><grid page="" color="yellow" label="INFJ"/></div>
+                <div class="col-3"><grid page="" color="blue" label="INTJ"/></div>
+                <div class="col-3"><grid page="" color="blue" label="ENTJ"/></div>
+                <div class="col-3"><grid page="" color="red" label="ENFP"/></div>
+                <div class="col-3"><grid page="" color="red" label="INFP"/></div>
+                <div class="col-3"><grid page="" color="green" label="INTP"/></div>
+                <div class="col-3"><grid page="" color="green" label="ENTP"/></div>
+                <div class="col-3"><grid page="" color="indigo" label="ESFP"/></div>
+                <div class="col-3"><grid page="" color="indigo" label="ISFP"/></div>
+                <div class="col-3"><grid page="" color="grey" label="ISTP"/></div>
+                <div class="col-3"><grid page="" color="grey" label="ESTP"/></div>
+                <div class="col-3"><grid page="" color="lime" label="ESFJ"/></div>
+                <div class="col-3"><grid page="" color="lime" label="ISFJ"/></div>
+                <div class="col-3"><grid page="" color="teal" label="ISTJ"/></div>
+                <div class="col-3"><grid page="" color="teal" label="ESTJ"/></div>
+            </div>
       </q-card-section>
     </q-card>
   </div>
-
 </template>
 <script>
+import grid from "components/grit/cBtnKenalDiri.vue";
 export default {
-  data () {
-    return {
-      
-      
-    }
+  data() {
+    return {};
+  },
+  components: {
+      grid
   }
-}
+};
 </script>

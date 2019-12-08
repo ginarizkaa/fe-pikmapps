@@ -16,7 +16,7 @@
         to="/temanPikma"
       />
       <q-space />
-      <img src="statics/icon/calender.png" height="40px" width="40px" style="bottom : 0px" />
+      <img src="statics/icon/logo_notif.png" height="30px" width="30px" style="bottom : 0px" />
     </q-toolbar>
   </q-header>
 </template>

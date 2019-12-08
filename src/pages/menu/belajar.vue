@@ -2,31 +2,36 @@
   <div class="q-pa-sm">
     <div>
       <q-carousel
-        style="margin-top:-30px;"
+        v-model="slide"
         swipeable
+        animated
         control-color="blue"
         navigation
         padding
-        height="200px"
-        class="transparent"
-        animated
-        v-model="slide"
-        infinite
         autoplay
-        transition-prev="slide-right"
-        transition-next="slide-left"
+        infinite
+        height="200px"
+        class="transparent rounded-borders q-mx-xs"
       >
         <q-carousel-slide name="style" class="column no-wrap flex-center">
-          <img src="statics/img/menu1.png" class="q-pt-lg" />
+          <div class="text-center">
+            <img src="statics/img/menu1.png" height="150px"/>
+          </div>
         </q-carousel-slide>
         <q-carousel-slide name="tv" class="column no-wrap flex-center">
-          <img src="statics/img/sign3.png" class="q-pt-lg" />
+          <div class="text-center">
+            <img src="statics/img/sign5.png" height="150px"/>
+          </div>
         </q-carousel-slide>
         <q-carousel-slide name="layers" class="column no-wrap flex-center">
-          <img src="statics/img/sign4.png" class="q-pt-lg" />
+          <div class="text-center">
+            <img src="statics/img/sign3.png" height="150px"/>
+          </div>
         </q-carousel-slide>
         <q-carousel-slide name="map" class="column no-wrap flex-center">
-          <img src="statics/img/sign5.png" class="q-pt-lg" />
+          <div class="text-center">
+            <img src="statics/img/sign4.png" height="150px"/>
+          </div>
         </q-carousel-slide>
       </q-carousel>
     </div>
