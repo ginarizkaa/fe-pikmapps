@@ -165,6 +165,11 @@ const routes = [
         name: 'grit'
       },
       {
+        path: '/grit/kd2/:title',
+        component: () => import('pages/grit/kenalDiri/kenalDiri2.vue'),
+        name: 'grit'
+      },
+      {
         path: '/grit/km/:title',
         component: () => import('pages/grit/kenalMinat/kenalMinat.vue'),
         name: 'grit'
@@ -189,6 +194,11 @@ const routes = [
         component: () => import('pages/grit/surat/surat.vue'),
         name: 'grit'
       },
+      {
+        path: '/grit/ka/:title',
+        component: () => import('pages/grit/kontakAlumni/kontakAlumni.vue'),
+        name: 'grit'
+      },
       // {
       //   path: '/grit/ar/:title',
       //   component: () => import('pages/grit/artikel/artikel.vue'),
@@ -202,6 +212,26 @@ const routes = [
       {
         path: '/grit/galau/:title',
         component: () => import('pages/grit/galau/galau.vue'),
+        name: 'grit'
+      },
+      {
+        path: '/grit/tipsTrik/:title',
+        component: () => import('pages/grit/tipsTrik/tipsTrik.vue'),
+        name: 'grit'
+      },
+      {
+        path: '/grit/sj/:title',
+        component: () => import('pages/grit/susunJadwal/susunJadwal.vue'),
+        name: 'grit'
+      },
+      {
+        path: '/grit/ca/:title',
+        component: () => import('pages/grit/ceritaAlumni/ceritaAlumni.vue'),
+        name: 'grit'
+      },
+      {
+        path: '/grit/ca2/:title',
+        component: () => import('pages/grit/ceritaAlumni/ceritaAlumni2.vue'),
         name: 'grit'
       },
       
