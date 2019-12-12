@@ -174,6 +174,11 @@ const routes = [
         name: 'rapor'
       },
       {
+        path: '/grafik/:title',
+        component: () => import('pages/rapor/grafik.vue'),
+        name: 'global'
+      },
+      {
         path: '/grit',
         component: () => import('pages/menu/grit.vue'),
         name: 'mainmenu'
