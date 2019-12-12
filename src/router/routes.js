@@ -169,6 +169,11 @@ const routes = [
         component: () => import('pages/tryOut/toUN/toUN.vue')
       },
       {
+        path: '/rapor/:title',
+        component: () => import('pages/rapor/rapor.vue'),
+        name: 'rapor'
+      },
+      {
         path: '/grit',
         component: () => import('pages/menu/grit.vue'),
         name: 'mainmenu'

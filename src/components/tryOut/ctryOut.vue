@@ -29,10 +29,6 @@ export default {
     navigate() {
       let self = this;
       self.$router.push({ path: self.page });
-    },
-    daftarTO() {
-      let self = this;
-      self.$router.push("/daftarTO");
     }
   }
 };
