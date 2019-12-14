@@ -1,5 +1,5 @@
 <template>
-<div class="ctr">
+<div>
   <q-card class="transparent" flat style="height: 100px; width: 100px;" @click="navigate()">
     <div class="ctr">
       <img :src="`${imgurl}`" :style="`height:${height}px ; width:${width}px`" />

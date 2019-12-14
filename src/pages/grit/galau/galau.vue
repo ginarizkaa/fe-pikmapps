@@ -20,22 +20,36 @@
         </q-tab-panel>
       </q-tab-panels>
     </q-card>-->
-    <q-input
-      v-model="search"
-      debounce="500"
-      filled
-      placeholder="Tanyakan masalahmu..."
-      color="yellow"
-      bg-color="teal-12"
-      class="text-white"
-    >
-      <template v-slot:prepend>
-        <q-icon name="search" />
-      </template>
-    </q-input>
+    <q-card class="card q-mt-md q-mb-md">
+      <div class="row">
+        <div class="col">
+          <q-item>
+            <q-item-section class="txt-left font2">
+              <q-input
+                borderless
+                style="height:50px; margin-top:-10px"
+                v-model="search"
+                label="Tanyakan masalahmu..."
+              />
+            </q-item-section>
+          </q-item>
+        </div>
+        <div class="col-2" style="text-align:right">
+          <img src="statics/img/g2.png" height="50px" width="45px" />
+        </div>
+        <div class="col-2" style="text-align:center">
+          <q-icon name="search" style="font-size: 45px; margin-top:5px" @click="searchUniv()" />
+        </div>
+      </div>
+    </q-card>
 
     <q-list bordered class="font4 rounded-borders q-mt-lg">
-      <q-expansion-item v-for="idx in filteredTanya" expand-separator :label="`${idx.tanya}`">
+      <q-expansion-item
+        v-for="(idx, index) in filteredTanya"
+        expand-separator
+        :label="`${idx.tanya}`"
+        :key="index"
+      >
         <q-card>
           <q-card-section>{{idx.jawab}}</q-card-section>
         </q-card>
@@ -55,13 +69,9 @@
 .my-card {
   width: 100%;
 }
-
-.q-field__control {
-  font-family: 'NeutraTextBook';
-}
-
-.q-field__native, .q-field__prefix, .q-field__suffix {
-  color: black;
+.card {
+  height: 50px;
+  background-color: #50e3c2;
 }
 </style>
 
@@ -97,7 +107,7 @@ export default {
   computed: {
     filteredTanya: function() {
       return this.dataTanya.filter(idx => {
-        return (idx.tanya).toLowerCase().match((this.search).toLowerCase());
+        return idx.tanya.toLowerCase().match(this.search.toLowerCase());
       });
     }
   }

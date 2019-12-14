@@ -48,6 +48,8 @@
       <div class="q-ma-xs">
         <grid title="Try Out" height="70" width="80" imgurl="statics/img/g16.png" page="/tryOut" />
       </div>
+    </div>
+      <div class="row flex flex-center q-pt-lg">
       <div class="q-ma-xs">
         <grid title="Bank Soal" height="70" width="80" imgurl="statics/img/g15.png" page="/bankSoal/Bank Soal" />
       </div>
@@ -55,7 +57,7 @@
         <grid title="Konsul" height="70" width="80" imgurl="statics/img/g14.png" page="/" />
       </div>
       <div class="q-ma-xs">
-        <grid title="Rapor" height="70" width="60" imgurl="statics/img/g17.png" page="/" />
+        <grid title="Rapor" height="70" width="60" imgurl="statics/img/g17.png" page="/history/Rapor" />
       </div>
     </div>
   </div>

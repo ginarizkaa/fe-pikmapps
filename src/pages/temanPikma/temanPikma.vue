@@ -18,7 +18,7 @@
             size="md"
             label="MAU JADI TEMAN PIKMA"
             no-caps
-            to="/belajar"
+            to="/temanPikma2"
           />
         </q-card-section>
       </q-card>

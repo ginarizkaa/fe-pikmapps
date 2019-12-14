@@ -12,20 +12,23 @@
       >Jas merah. Jangan sekali-sekali melupakan sejarah. Pelajari soal-soal tahun lalu!</div>
     </div>
     <div class="q-ma-md">
-      <grid page="/sbmptn/SBMPTN 2011" title="UTBK 2019"/>
-      <grid page="/sbmptn/SBMPTN 2011" title="UTBK 2018"/>
-      <grid page="/sbmptn/SBMPTN 2011" title="SBMPTN 2017"/>
-      <grid page="/sbmptn/SBMPTN 2011" title="SBMPTN 2016"/>
-      <grid page="/sbmptn/SBMPTN 2011" title="SBMPTN 2015"/>
+      <grid page="/sbmptn/SBMPTN 2011" title="SBMPTN 2011" color="white" class="bg-bankSoal"/>
+      <grid page="/sbmptn/SBMPTN 2012" title="SBMPTN 2012" color="white" class="bg-bankSoal"/>
+      <grid page="/sbmptn/SBMPTN 2013" title="SBMPTN 2013" color="white" class="bg-bankSoal"/>
+      <grid2  title="SBMPTN 2014" color="white" class="bg-bankSoal"/>
+      <grid2  title="UJIAN TULIS UGM 2014" color="white" class="bg-bankSoal"/>
+      <grid2  title="SIMAK UI 2014" color="white" class="bg-bankSoal"/>
     </div>
   </div>
 </template>
 <style lang="stylus"></style>
 <script>
-import grid from "components/bankSoal/cbankSoal.vue";
+import grid from "components/pelajaran/cpelajaran.vue";
+import grid2 from "components/bankSoal/cbankSoalLock.vue";
 export default {
   components: {
-    grid
+    grid,
+    grid2
   },
 };
 </script>

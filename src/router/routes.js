@@ -148,6 +148,11 @@ const routes = [
         name: 'tryOut'
       },
       {
+        path: '/tpstka/:title/',
+        component: () => import('pages/tryOut/tpstka/tpstka.vue'),
+        name: 'tryOut'
+      },
+      {
         path: '/toUTBK',
         component: () => import('pages/tryOut/toUTBK/toUTBK.vue')
       },
@@ -162,6 +167,21 @@ const routes = [
       {
         path: '/toUN',
         component: () => import('pages/tryOut/toUN/toUN.vue')
+      },
+      {
+        path: '/history/:title',
+        component: () => import('pages/rapor/history.vue'),
+        name: 'rapor2'
+      },
+      {
+        path: '/rapor/:title',
+        component: () => import('pages/rapor/rapor.vue'),
+        name: 'rapor'
+      },
+      {
+        path: '/grafik/:title',
+        component: () => import('pages/rapor/grafik.vue'),
+        name: 'global'
       },
       {
         path: '/grit',
@@ -242,6 +262,16 @@ const routes = [
         path: '/grit/ca2/:title',
         component: () => import('pages/grit/ceritaAlumni/ceritaAlumni2.vue'),
         name: 'grit'
+      },
+      {
+        path: '/temanPikma2',
+        component: () => import('pages/temanPikma/temanPikma2.vue'),
+        name: 'temanPikma'
+      },
+      {
+        path: '/temanPikma/:title/:caption/:price',
+        component: () => import('pages/temanPikma/pembayaran.vue'),
+        name: 'temanPikma'
       },
       
     ]
