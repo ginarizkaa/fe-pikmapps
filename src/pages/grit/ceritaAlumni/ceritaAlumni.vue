@@ -14,11 +14,12 @@
       </template>
     </q-input>
     <div class="q-pt-md">
-      <grid v-for="idx in filteredTanya" class="q-mb-sm"
+      <grid v-for="(idx, index) in filteredTanya" class="q-mb-sm"
         :title="`${idx.judul}`"
         :caption="`${idx.penulis}`"
         page="/grit/ca2/Cerita Alumni 2"
         :imgurl="`${idx.foto}`"
+        :key="index"
       />
     </div>
   </div>

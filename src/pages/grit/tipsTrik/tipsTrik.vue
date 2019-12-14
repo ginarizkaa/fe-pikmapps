@@ -35,7 +35,7 @@
     </q-input>
 
     <q-list bordered class="font4 rounded-borders q-mt-lg">
-      <q-expansion-item v-for="idx in filteredTanya" expand-separator :label="`${idx.tanya}`">
+      <q-expansion-item v-for="(idx, index) in filteredTanya" expand-separator :label="`${idx.tanya}`" :key="index">
         <q-card>
           <q-card-section>{{idx.jawab}}</q-card-section>
         </q-card>

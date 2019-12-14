@@ -14,13 +14,14 @@
       </template>
     </q-input>
 
-    <grid v-for="idx in filteredTanya" 
+    <grid v-for="(idx, index) in filteredTanya" 
     :nama="`${idx.nama}`"
     :univ="`${idx.univ}`" 
     :tahun="`${idx.tahun}`" 
     :profesi="`${idx.profesi}`"  
     caption="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius reprehenderit eos corrupti commodi magni quaerat ex numquam, dolorum officiis modi facere maiores architecto suscipit iste eveniet doloribus ullam aliquid"  
     page="/signup"
+    :key="index"
     />
     
   </div>
