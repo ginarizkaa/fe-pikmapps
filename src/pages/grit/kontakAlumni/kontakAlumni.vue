@@ -1,47 +1,53 @@
 <template>
   <div class="q-pa-md">
-    <q-input
-      v-model="search"
-      debounce="500"
-      filled
-      placeholder="Cari Kakak..."
-      color="yellow"
-      bg-color="teal-12"
-      class="text-white"
-    >
-      <template v-slot:prepend>
-        <q-icon name="search" />
-      </template>
-    </q-input>
+    <q-card class="card q-mt-md q-mb-md">
+      <div class="row">
+        <div class="col">
+          <q-item>
+            <q-item-section class="txt-left font2">
+              <q-input
+                borderless
+                style="height:50px; margin-top:-10px"
+                v-model="search"
+                label="Cari Kakak..."
+              />
+            </q-item-section>
+          </q-item>
+        </div>
+        <div class="col-2" style="text-align:right">
+          <img src="statics/img/g2.png" height="50px" width="45px" />
+        </div>
+        <div class="col-2" style="text-align:center">
+          <q-icon name="search" style="font-size: 45px; margin-top:5px" @click="searchUniv()" />
+        </div>
+      </div>
+    </q-card>
 
-    <grid v-for="(idx, index) in filteredTanya" 
-    :nama="`${idx.nama}`"
-    :univ="`${idx.univ}`" 
-    :tahun="`${idx.tahun}`" 
-    :profesi="`${idx.profesi}`"  
-    caption="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius reprehenderit eos corrupti commodi magni quaerat ex numquam, dolorum officiis modi facere maiores architecto suscipit iste eveniet doloribus ullam aliquid"  
-    page="/signup"
-    :key="index"
+    <grid
+      v-for="(idx, index) in filteredTanya"
+      :nama="`${idx.nama}`"
+      :univ="`${idx.univ}`"
+      :tahun="`${idx.tahun}`"
+      :profesi="`${idx.profesi}`"
+      caption="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius reprehenderit eos corrupti commodi magni quaerat ex numquam, dolorum officiis modi facere maiores architecto suscipit iste eveniet doloribus ullam aliquid"
+      page="/signup"
+      :key="index"
     />
-    
   </div>
 </template>
 <style lang="stylus">
-.q-field__control {
-  font-family: 'NeutraTextBook';
-}
-
-.q-field__native, .q-field__prefix, .q-field__suffix {
-  color: black;
+.card {
+  height: 50px;
+  background-color: #50e3c2;
 }
 </style>
 
 <script>
 import grid from "components/Alumni/cKontakAlumni.vue";
 export default {
-    components: {
-        grid
-    },
+  components: {
+    grid
+  },
   data() {
     return {
       search: "",
@@ -75,14 +81,14 @@ export default {
           univ: "UNDIP",
           tahun: "2012",
           profesi: "Konsultan Hukum"
-        },
+        }
       ]
     };
   },
   computed: {
     filteredTanya: function() {
       return this.dataKontak.filter(idx => {
-        return (idx.nama).toLowerCase().match((this.search).toLowerCase());
+        return idx.nama.toLowerCase().match(this.search.toLowerCase());
       });
     }
   }

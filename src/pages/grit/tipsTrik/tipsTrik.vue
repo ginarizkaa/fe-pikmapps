@@ -29,7 +29,7 @@
                 borderless
                 style="height:50px; margin-top:-10px"
                 v-model="search"
-                label="Cari Topik..."
+                label="Pertanyaanmu..."
               />
             </q-item-section>
           </q-item>
