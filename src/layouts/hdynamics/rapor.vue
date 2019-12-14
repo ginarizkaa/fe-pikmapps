@@ -1,10 +1,8 @@
 <template>
-  <q-header class="bg-global" >
+  <q-header elevated class="bg-header7" >
     <q-toolbar class="bg-global">
-      <q-btn flat icon="img:statics/icon/back1.png" style="margin-top:15px" @click="$router.go(-1)" />
-      <p class="font3 fs2 blue" style="margin-top:31px;">{{$route.params.title}}</p>
-      <q-space />
-      <q-btn icon="trending_up" color="positive" style="margin-top:15px;margin-right:15px" label="Grafik" no-caps to="/grafik/Grafik"/>
+      <q-btn flat icon="img:statics/icon/back1.png"  @click="$router.go(-1)" />
+      <p class="font3 fs2 yellow" style="margin-top:16px;">{{$route.params.title}}</p>
     </q-toolbar>
   </q-header>
 </template>

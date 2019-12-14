@@ -10,6 +10,7 @@
     <HGlobal v-if="['global'].indexOf($route.name) > -1"/>
     <HRapor v-if="['rapor'].indexOf($route.name) > -1"/>
     <HTemanPikma v-if="['temanPikma'].indexOf($route.name) > -1"/>
+    <HRapor2 v-if="['rapor2'].indexOf($route.name) > -1"/>
     <q-page-container>
       <router-view />
     </q-page-container>
@@ -28,6 +29,7 @@ import HGrit from "./hdynamics/grit.vue"
 import HGlobal from "./hdynamics/global.vue"
 import HRapor from "./hdynamics/rapor.vue"
 import HTemanPikma from "./hstatics/temanPikma.vue"
+import HRapor2 from "./hdynamics/rapor2.vue"
 export default {
   components: {
     HMainMenu,
@@ -40,7 +42,8 @@ export default {
     HGrit,
     HGlobal,
     HRapor,
-    HTemanPikma
+    HTemanPikma,
+    HRapor2,
   },
   
 }
