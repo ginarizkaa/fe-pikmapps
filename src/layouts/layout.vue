@@ -9,6 +9,7 @@
     <HGrit v-if="['grit'].indexOf($route.name) > -1"/>
     <HGlobal v-if="['global'].indexOf($route.name) > -1"/>
     <HRapor v-if="['rapor'].indexOf($route.name) > -1"/>
+    <HRapor2 v-if="['rapor2'].indexOf($route.name) > -1"/>
     <q-page-container>
       <router-view />
     </q-page-container>
@@ -26,6 +27,7 @@ import HBankSoal from "./hdynamics/bankSoal.vue"
 import HGrit from "./hdynamics/grit.vue"
 import HGlobal from "./hdynamics/global.vue"
 import HRapor from "./hdynamics/rapor.vue"
+import HRapor2 from "./hdynamics/rapor2.vue"
 export default {
   components: {
     HMainMenu,
@@ -37,7 +39,8 @@ export default {
     HBankSoal,
     HGrit,
     HGlobal,
-    HRapor
+    HRapor,
+    HRapor2,
   },
   
 }

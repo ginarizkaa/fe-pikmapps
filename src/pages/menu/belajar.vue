@@ -57,7 +57,7 @@
         <grid title="Konsul" height="70" width="80" imgurl="statics/img/g14.png" page="/" />
       </div>
       <div class="q-ma-xs">
-        <grid title="Rapor" height="70" width="60" imgurl="statics/img/g17.png" page="/rapor/Rapor" />
+        <grid title="Rapor" height="70" width="60" imgurl="statics/img/g17.png" page="/history/Rapor" />
       </div>
     </div>
   </div>
