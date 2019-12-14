@@ -6,7 +6,8 @@
       </div>
       <div class="q-px-md">
         <grid
-          v-for="idx in data"
+          v-for="(idx, index) in data"
+          :key="index"
           :title="`${idx.title}`"
           :caption="`${idx.caption}`"
           :price="`${idx.price}`"

@@ -28,28 +28,28 @@
             <div class="col-1">
               <q-item>
                 <q-item-section class="txt-left">
-                  <q-item-label class="font4 fs18 black">Rp</q-item-label>
-                  <q-item-label class="font4 fs18 black">Rp</q-item-label>
+                  <q-item-label class="font4 fs18 red">Rp</q-item-label>
+                  <q-item-label class="font4 fs18 red">Rp</q-item-label>
                 </q-item-section>
               </q-item>
               <q-separator />
               <q-item>
                 <q-item-section class="txt-left">
-                  <q-item-label class="font4 fs18 black">Rp</q-item-label>
+                  <q-item-label class="font4 fs18 red">Rp</q-item-label>
                 </q-item-section>
               </q-item>
             </div>
             <div class="col-4">
               <q-item>
                 <q-item-section class="txt-right">
-                  <q-item-label class="font4 fs18 black">{{$route.params.price}}</q-item-label>
-                  <q-item-label class="font4 fs18 black text-right">{{kodeUnik}}</q-item-label>
+                  <q-item-label class="font4 fs18 red">{{$route.params.price}}</q-item-label>
+                  <q-item-label class="font4 fs18 red">{{kodeUnik}}</q-item-label>
                 </q-item-section>
               </q-item>
               <q-separator />
               <q-item>
                 <q-item-section class="txt-right">
-                  <q-item-label class="font4 fs18 black">{{total}}</q-item-label>
+                  <q-item-label class="font4 fs18 red">{{total}}</q-item-label>
                 </q-item-section>
               </q-item>
             </div>
@@ -73,7 +73,7 @@
           <q-item-label class="font4 fs20 black">Metode Pembayaran</q-item-label>
         </div>
         <q-card-section>
-          <div v-for="idx in data">
+          <div v-for="(idx, index) in data" :key="index">
             <div class="row q-pa-sm">
               <div class="col-4 flex flex-center">
                 <img :src="`${idx.imgurl}`" width="80%" height="70%" />
