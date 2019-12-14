@@ -258,6 +258,16 @@ const routes = [
         component: () => import('pages/grit/ceritaAlumni/ceritaAlumni2.vue'),
         name: 'grit'
       },
+      {
+        path: '/temanPikma2',
+        component: () => import('pages/temanPikma/temanPikma2.vue'),
+        name: 'temanPikma'
+      },
+      {
+        path: '/temanPikma/:title/:caption/:price',
+        component: () => import('pages/temanPikma/pembayaran.vue'),
+        name: 'temanPikma'
+      },
       
     ]
   },
