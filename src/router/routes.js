@@ -36,11 +36,11 @@ const routes = [
     path: '',
     component: () => import('layouts/layout.vue'),
     children : [
-      // {
-      //   path: '/test',
-      //   component: () => import('pages/test.vue'),
-      //   name: 'modul'
-      // },
+      {
+        path: '/test',
+        component: () => import('pages/test.vue'),
+        name: 'modul'
+      },
       {
         path: '/belajar',
         component: () => import('pages/menu/belajar.vue'),
