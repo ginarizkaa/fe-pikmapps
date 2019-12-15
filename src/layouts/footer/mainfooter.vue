@@ -14,7 +14,7 @@
         <q-btn flat icon="img:statics/icon/menu3.png" style="font-size: 1.5rem;" to="/temanPikma" />
       </div>
       <div class="col">
-        <q-btn flat icon="img:statics/icon/menu4.png" style="font-size: 1.5rem;" to="/signin" />
+        <q-btn flat icon="img:statics/icon/menu4.png" style="font-size: 1.5rem;" to="/profile" />
       </div>
     </div>
   </q-footer>

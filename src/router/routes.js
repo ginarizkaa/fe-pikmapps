@@ -30,7 +30,7 @@ const routes = [
   },
   {
     path: '/temanPikma',
-    component: () => import('pages/temanPikma/temanPikma.vue')
+    component: () => import('pages/menu/temanPikma.vue')
   },
   {
     path: '',
@@ -272,6 +272,15 @@ const routes = [
         path: '/temanPikma/:title/:caption/:price',
         component: () => import('pages/temanPikma/pembayaran.vue'),
         name: 'temanPikma'
+      },
+      {
+        path: '/profile',
+        component: () => import('pages/menu/profile.vue')
+      },
+      {
+        path: '/notif/:title',
+        component: () => import('pages/notifikasi/notifikasi.vue'),
+        name: 'notif'
       },
       
     ]
