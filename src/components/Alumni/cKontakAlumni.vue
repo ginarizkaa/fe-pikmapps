@@ -6,7 +6,7 @@
         <q-item-label caption class="font4 fs12">{{caption}}</q-item-label>
       </q-item-section>
     </q-item>
-      <q-item-section align="right" class="q-pb-sm q-px-sm">
+      <q-item-section align="right" class="q-pb-sm q-px-md">
         <q-btn
           style="width:75px;"
           size="sm"

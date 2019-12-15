@@ -14,6 +14,7 @@
         <q-input rounded outlined size="md" autofocus="true"/>
       </div>
       <q-btn
+      size="sm"
         unelevated
         rounded
         color="yellow"
@@ -29,7 +30,7 @@
 <style lang="stylus">
 //modifikasi
 .q-field__control{
-  height:25px;
+  height:40px;
   font-family: 'NeutraTextBook';
 }
 .q-field__native, .q-field__prefix, .q-field__suffix {

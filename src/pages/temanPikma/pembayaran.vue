@@ -147,7 +147,7 @@ export default {
           nama: "a.n Muhammad Delly Permana"
         }
       ],
-      kodeUnik: "500"
+      kodeUnik: Math.round(Math.random() * 1000)
     };
   },
   computed: {
