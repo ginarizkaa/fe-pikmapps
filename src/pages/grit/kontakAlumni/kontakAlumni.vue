@@ -18,7 +18,7 @@
           <img src="statics/img/g2.png" height="50px" width="45px" />
         </div>
         <div class="col-2" style="text-align:center">
-          <q-icon name="search" style="font-size: 45px; margin-top:5px" @click="searchUniv()" />
+          <q-icon name="search" style="font-size: 45px; margin-top:5px"/>
         </div>
       </div>
     </q-card>

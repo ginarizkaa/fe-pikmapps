@@ -48,6 +48,26 @@
             <div class="col q-mx-xs">
               <q-form class="q-gutter-md">
                 <q-input rounded outlined placeholder="I AM" disable bg-color="grey-4" />
+                <div v-for="(line2, index) in lines2" v-bind:key="index" class="row">
+                  <div style="width:100%; margin-bottom:-10px;">
+                    <div class="q-mb-xs">
+                      <q-input rounded outlined v-model="line2.iam" placeholder="I Am..." type="text" value=""/>
+                    </div>
+                    <div>
+                      <div class="txt-right">
+                        <q-btn
+                          v-if="index + 1 === lines2.length"
+                          @click="addLine2"
+                          icon="add"
+                          size="sm"
+                          round
+                          class="q-mx-xs"
+                        />
+                        <q-btn class="q-mx-xs" @click="removeLine2(index)" icon="delete" size="sm" round />
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </q-form>
             </div>
           </div>
@@ -63,7 +83,7 @@
 }
 //modifikasi
 .q-field__control{
-  height:25px;
+  height:40px;
   font-family: 'NeutraTextBook';
 }
 .q-field__native, .q-field__prefix, .q-field__suffix {
@@ -76,12 +96,17 @@ export default {
   data() {
     return {
       lines: [],
-      blockRemoval: true
+      blockRemoval: true,
+      lines2: [],
+      blockRemoval2: true
     };
   },
   watch: {
     lines() {
       this.blockRemoval = this.lines.length <= 1;
+    },
+    lines2() {
+      this.blockRemoval2 = this.lines2.length <= 1;
     }
   },
   methods: {
@@ -96,10 +121,23 @@ export default {
     },
     removeLine(lineId) {
       if (!this.blockRemoval) this.lines.splice(lineId, 1);
+    },
+    addLine2() {
+      let checkEmptyLines = this.lines2.filter(line2 => line2.number === null);
+
+      if (checkEmptyLines.length >= 1 && this.lines2.length > 0) return;
+
+      this.lines2.push({
+        iam: null
+      });
+    },
+    removeLine2(lineId) {
+      if (!this.blockRemoval2) this.lines2.splice(lineId, 1);
     }
   },
   mounted() {
     this.addLine();
+    this.addLine2();
   }
 };
 </script>

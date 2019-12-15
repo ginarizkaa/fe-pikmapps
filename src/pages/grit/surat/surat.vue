@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="bg-grit-surat">
-      <div class="q-mx-lg">
+      <div class="q-mx-lg q-pt-md">
         <div class="font3 yellow fs1">
           SURAT DARI MASA DEPAN
           <!-- <img style="height:50px;" src="statics/img/g9.png" /> -->
@@ -14,9 +14,9 @@
     <q-card class="q-ma-md">
       <q-card-section>
         <div class="q-ma-md">
-             <q-input v-model="text" label="Dear..." stack-label :dense="dense" />
+             <q-input v-model="text" label="Dear..." stack-label dense="dense" />
           <br />
-          <q-input filled type="textarea"/>
+          <q-input filled type="textarea" v-model="text2"/>
         </div>
         <div class="q-ma-md" style="text-align: right">
           <q-btn unelevated rounded color="yellow-12">
@@ -29,5 +29,12 @@
 </template>
 <style lang="stylus"></style>
 <script>
-export default {};
+export default {
+  data () {
+    return {
+      text: '',
+      text2: '',
+    }
+  }
+};
 </script>
