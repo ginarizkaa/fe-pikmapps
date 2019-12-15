@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="bg-orange">
+    <div class="bg-orange2">
       <q-btn flat icon="img:statics/icon/back2.png" @click="$router.go(-1)" style="margin:18px;" />
       <div class="font3 blue fs40" style="margin-left:30px;margin-top:-30px">
         BANK
