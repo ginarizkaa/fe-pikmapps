@@ -1,5 +1,5 @@
 <template>
-  <div class="q-pa-md">
+  <div class="q-pa-md flex flex-center">
     <img src="statics/img/susunJadwal.png" width="330px">
   </div>
 </template>

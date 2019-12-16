@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="flex flex-center">
     <div class="q-mt-md q-mx-sm">
       <img src="statics/img/kenalDiri.png" />
     </div>

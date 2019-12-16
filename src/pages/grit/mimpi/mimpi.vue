@@ -31,12 +31,13 @@
 <style lang="stylus">
 //modifikasi
 .q-field__control{
-  height:25px;
+  height:40px;
   font-family: 'NeutraTextBook';
 }
 .q-field__native, .q-field__prefix, .q-field__suffix {
   color: rgb(71, 96, 172);
 }
+
 </style>
 <script>
 export default {

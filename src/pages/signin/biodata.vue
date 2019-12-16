@@ -26,13 +26,13 @@
           />
         </div>
         <q-form class="q-gutter-md">
-          <p class="fusual">Nama</p>
-          <q-input rounded outlined size="md" v-model="nama"/>
-          <p class="fusual">No. Telp</p>
-          <q-input rounded outlined v-model="notelp"/>
+          <p class="fusual">Nama Lengkap</p>
+          <q-input rounded outlined size="md" v-model="nama" />
+          <p class="fusual">No. WhatsApp</p>
+          <q-input rounded outlined />
           <p class="fusual">Email</p>
-          <q-input rounded outlined bg-color="grey-4" v-model="email"/>
-          <div class="row">
+          <q-input rounded outlined bg-color="grey-4" v-model="email" />
+          <!-- <div class="row">
             <div class="col-8">
               <p class="fusual2">Alamat</p>
               <q-input rounded outlined v-model="alamat"/>
@@ -41,7 +41,7 @@
               <p class="fusual2">Kode Pos</p>
               <q-input rounded outlined v-model="kodepos"/>
             </div>
-          </div>
+          </div>-->
           <p class="fusual">Sekolah</p>
           <q-input rounded outlined v-model="sekolah"/>
           <div class="row">
@@ -64,20 +64,39 @@
   </div>
 </template>
 <style lang="stylus">
-//modifikasi
-.q-field__control{
-  height:25px;
+// modifikasi
+.q-field__control {
+  height: 40px;
   font-family: 'NeutraTextBook';
 }
+
 .q-field__native, .q-field__prefix, .q-field__suffix {
   color: rgb(71, 96, 172);
+}
+
+.q-field--auto-height .q-field__native {
+  min-height: 40px;
+}
+
+.q-field--auto-height .q-field__control {
+  height: 40px;
+}
+
+.q-field--auto-height .q-field__control, .q-field--auto-height .q-field__native {
+  min-height: 40px;
+}
+
+.q-field__marginal {
+  height: 40px;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 24px;
 }
 </style>
 <script>
 
 import register from "../../api/auth/index";
 export default {
-  data () {
+  data() {
     return {
       data : {
         nama: "a",
@@ -92,13 +111,9 @@ export default {
         toSay: "a"
       },
       model: null,
-      model2:null,
-      options: [
-        'SD', 'SMP', 'SMA'
-      ],
-      option2: [
-        '1', '2', '3', '4', '5','6','7','8','9','10','11','12'
-      ],
+      model2: null,
+      options: ["SD", "SMP", "SMA"],
+      option2: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
       
     }
   },
@@ -136,6 +151,7 @@ export default {
               console.log(err);
           });
       }
+
   }
-}
+};
 </script>

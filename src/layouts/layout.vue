@@ -4,7 +4,7 @@
     <HBelajar v-if="['belajar'].indexOf($route.name) > -1"/>
     <HModul v-if="['modul'].indexOf($route.name) > -1"/>
     <HPostTest v-if="['postTest'].indexOf($route.name) > -1"/>
-    <HTryOut v-if="['tryOut'].indexOf($route.name) > -1"/>
+    <HTryOut v-if="['tryOut', 'notif'].indexOf($route.name) > -1"/>
     <HBankSoal v-if="['bankSoal'].indexOf($route.name) > -1"/>
     <HGrit v-if="['grit'].indexOf($route.name) > -1"/>
     <HGlobal v-if="['global'].indexOf($route.name) > -1"/>
