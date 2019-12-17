@@ -11,7 +11,7 @@
     </h3>
     <center>
       <div class="q-mx-xl">
-        <q-input rounded outlined size="md" autofocus="true"/>
+        <q-input rounded outlined size="md" v-model="toSay"/>
       </div>
       <q-btn
       size="sm"
@@ -21,8 +21,8 @@
         class="font2 q-mt-sm"
         text-color="black"
         label="submit"
-        no-caps
-        to="/preMenu3"
+        no-caps 
+        @click="onSubmit()"
       />
     </center>
   </div>
@@ -38,9 +38,54 @@
 }
 </style>
 <script>
+import register from "../../api/auth/index";
+
 export default {
   data() {
-    return {};
+    return {
+      toSay: null,
+      data: null,
+      autofocus: false
+    };
+  },
+
+  mounted(){
+    this.$set(this, 'data', this.$store.getters.getBiodata)
+  },
+
+  methods: {
+    onSubmit() {    
+      const self = this
+      self.data.toSay = self.toSay
+      register.updateUserBiodata(window, self.data)
+          .then(function (result) {
+              if (!result) {
+                  self.$q.notify({
+                      color: "red-5",
+                      textColor: "white",
+                      icon: "fas fa-exclamation-triangle",
+                      message: "Failed to update Biodata. Please Try Again!",
+                      position: "top",
+                      timeout: 500
+                  });
+          
+              } else {
+                  self.$q.notify({
+                      color: "green-4",
+                      textColor: "white",
+                      icon: "fas fa-check-circle",
+                      message: "Biodata has been update",
+                      position: "top",
+                      timeout: 500
+                  });
+                  self.$router.push('/preMenu3')
+              }
+          })
+          .catch(function (err) {
+              console.log(err);
+          });
+      }
+
   }
 };
 </script>

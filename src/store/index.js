@@ -10,16 +10,18 @@ Vue.use(Vuex)
  * directly export the Store instantiation
  */
 
-export default function (/* { ssrContext } */) {
-  const Store = new Vuex.Store({
-    modules: {
-      // example
-    },
-
-    // enable strict mode (adds overhead!)
-    // for dev mode only
-    strict: process.env.DEV
-  })
-
-  return Store
-}
+export default new Vuex.Store({
+	state: {
+		biodata: {}
+	},
+	getters: {
+		getBiodata: state => {
+			return state.biodata
+		}
+	},
+	mutations: {
+		setData (state, data) {
+			state.biodata = data
+		}
+	}	
+})

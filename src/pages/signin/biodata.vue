@@ -27,11 +27,11 @@
         </div>
         <q-form class="q-gutter-md">
           <p class="fusual">Nama Lengkap</p>
-          <q-input rounded outlined size="md" v-model="nama" />
+          <q-input rounded outlined size="md" v-model="data.nama" />
           <p class="fusual">No. WhatsApp</p>
-          <q-input rounded outlined />
+          <q-input rounded outlined v-model="data.notelp" />
           <p class="fusual">Email</p>
-          <q-input rounded outlined bg-color="grey-4" v-model="email" />
+          <q-input rounded outlined bg-color="grey-4" v-model="data.email" />
           <!-- <div class="row">
             <div class="col-8">
               <p class="fusual2">Alamat</p>
@@ -43,15 +43,15 @@
             </div>
           </div>-->
           <p class="fusual">Sekolah</p>
-          <q-input rounded outlined v-model="sekolah"/>
+          <q-input rounded outlined v-model="data.sekolah"/>
           <div class="row">
             <div class="col">
               <p class="fusual2">Tingkat</p>
-              <q-select rounded outlined v-model="model" :options="options" />
+              <q-select rounded outlined v-model="data.tingkat" :options="options"/>
             </div>
             <div class="col">
               <p class="fusual2">Kelas</p>
-              <q-select rounded outlined v-model="model2" :options="option2" />
+              <q-select rounded outlined v-model="data.kelas" :options="option2" />
             </div>
           </div>
 
@@ -99,19 +99,17 @@ export default {
   data() {
     return {
       data : {
-        nama: "a",
-        notelp: "a",
-        email: "a",
-        alamat: "a",
-        kodepos: "a",
-        sekolah: "a",
-        tingkat: "a",
-        kelas: "a",
-        beA: "a",
-        toSay: "a"
+        nama: null,
+        notelp: null,
+        email: null,
+        alamat: "",
+        kodepos: "",
+        sekolah: null,
+        tingkat: null,
+        kelas: null,
+        beA: "",
+        toSay: ""
       },
-      model: null,
-      model2: null,
       options: ["SD", "SMP", "SMA"],
       option2: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
       
@@ -143,6 +141,8 @@ export default {
                       position: "top",
                       timeout: 500
                   });
+
+                  self.$store.commit('setData', self.data)
                   
                   self.$router.push('/preMenu')
               }

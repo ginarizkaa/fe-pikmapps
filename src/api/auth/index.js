@@ -19,7 +19,7 @@ export default {
         return getApiNoAuth()
             .post('/account', {
                 nama: data.nama,
-                password: "password",
+                password: data.email,
                 notelp: data.notelp,
                 email: data.email,
                 alamat: data.alamat,
@@ -37,5 +37,31 @@ export default {
             .catch(function(err) {
                 console.log(err);
             })
-        }
+        },
+
+
+        updateUserBiodata(window, data) {
+
+            return getApiNoAuth()
+                .put('/account', {
+                    nama: data.nama,
+                    password: data.email,
+                    notelp: data.notelp,
+                    email: data.email,
+                    alamat: data.alamat,
+                    kodepos: data.kodepos,
+                    sekolah: data.sekolah,
+                    tingkat: data.tingkat,
+                    kelas: data.kelas,
+                    point: 0,
+                    beA: data.beA,
+                    toSay: data.toSay
+                })
+                    .then(function(response) {
+                        return response.data;
+                })
+                .catch(function(err) {
+                    console.log(err);
+                })
+            }
 }
