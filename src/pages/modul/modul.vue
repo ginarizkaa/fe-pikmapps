@@ -1,35 +1,11 @@
 <template>
   <center>
-    <div class="q-ma-md">
+    <div class="q-ma-md" v-for="item in modulDatas" v-bind:key="item.id">
       <grid
-        title="Kelas 9"
-        caption="Referensi lengkap soal per materi untuk belajar kamu!"
-        page="/mp/modul/Kelas 9"
-        imgtext="XI"
-      />
-      <grid
-        title="Kelas 10"
-        caption="Referensi lengkap soal per materi untuk belajar kamu!"
-        page="/mj/modul/Kelas 10"
-        imgtext="X"
-      />
-      <grid
-        title="Kelas 11"
-        caption="Referensi lengkap soal per materi untuk belajar kamu!"
-        page="/mj/modul/Kelas 11"
-        imgtext="XI"
-      />
-      <grid
-        title="Kelas 12"
-        caption="Referensi lengkap soal per materi untuk belajar kamu!"
-        page="/mj/modul/Kelas 12"
-        imgtext="XII"
-      />
-      <grid
-        title="Intensif"
-        caption="Referensi lengkap soal per materi untuk belajar kamu!"
-        page="/"
-        imgtext="0"
+        :title="item.title"
+        :caption="item.deskripsi"
+        :page="item.page"
+        :imgtext="item.imgtext"
       />
     </div>
   </center>
@@ -42,10 +18,40 @@
 </style>
 <script>
 import grid from "components/modul/cmodul.vue";
+import modul from "../../api/modul/index";
+
 export default {
   components: {
     grid
     
+  },
+
+  data() {
+    return {
+      modulDatas: null
+    };
+  },
+
+  beforeCreate() {
+    const self = this
+    modul.getDataModuls(window)
+        .then(function (result) {
+            if (!result) {
+                self.$q.notify({
+                    color: "red-5",
+                    textColor: "white",
+                    icon: "fas fa-exclamation-triangle",
+                    message: "Failed to load data. Please Try Again!",
+                    position: "top",
+                    timeout: 500
+                });
+            } else {
+                self.modulDatas = result
+            }
+        })
+        .catch(function (err) {
+            console.log(err);
+        });
   }
 };
 </script>
