@@ -18,7 +18,6 @@
       <grid2  title="SBMPTN 2014" color="white" class="bg-bankSoal"/>
       <grid2  title="UJIAN TULIS UGM 2014" color="white" class="bg-bankSoal"/>
       <grid2  title="SIMAK UI 2014" color="white" class="bg-bankSoal"/>
-      
     </div>
   </div>
 </template>
