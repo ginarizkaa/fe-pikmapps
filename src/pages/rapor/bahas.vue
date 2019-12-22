@@ -26,7 +26,7 @@
               </div>
             </q-item-section>
           </template>
-          <q-card class="q-ml-lg q-mr-md card6" v-for="(data, index2) in data.pembahasan" :key="index2" @click="navigate(data.page)">
+          <q-card class="q-ml-lg q-mr-md card6" v-for="(data, index2) in data.pembahasan" :key="index2" @click="navigate2(data)">
             <div >
               <div class="row">
                 <div class="col-10">
@@ -72,27 +72,7 @@ export default {
       searchdiv2: false,
       rekomendasi: false,
       sortrekomendasi: false,
-      hasilSearch: [
-        {
-          universitas: "Universitas Komputer Indonesia",
-          jurusan: "Teknik Komputer"
-        },
-        {
-          universitas: "Universitas Komputer Indonesia",
-          jurusan: "Teknik Komputer"
-        },
-        {
-          universitas: "Universitas Komputer Indonesia",
-          jurusan: "Teknik Informatika"
-        }
-      ],
-      model: null,
-      options: [
-        "Kategori",
-        "Score Tertinggi",
-        "Score Terendah",
-        "Waktu Tercepat"
-      ],
+      
       datas : [
         {
           matkul : "Matematika",
@@ -102,7 +82,7 @@ export default {
             {
               judul : "Persamaan Kuadrat",
               jawaban : true,
-              page : "/"
+              page : "/pembahasan/UN"
             },
             {
               judul : "Lingkaran",
@@ -162,10 +142,11 @@ export default {
     grid
   },
   methods: {
-    navigate(data) {
-      let page = data.page;
+    navigate2(data) {
+      let page2 = data.page;
+      console.log("ini page2", page2)
       let self = this;
-      self.$router.push({ path: self.page });
+      self.$router.push(page2);
     },
     search1() {
       this.homediv = false;
