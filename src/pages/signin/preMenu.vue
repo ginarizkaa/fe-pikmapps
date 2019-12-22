@@ -23,8 +23,8 @@
         class="font2 q-mt-sm"
         text-color="black"
         label="submit"
-        no-caps
-        to="/preMenu2"
+        no-caps 
+        @click="onSubmit()"
       />
     </center>
     <div class="ctr" style="margin-top:20px">
@@ -63,6 +63,10 @@
 }
 </style>
 <script>
+
+import register from "../../api/auth/index";
+import { type } from 'os';
+
 export default {
   data() {
     return {
@@ -75,8 +79,49 @@ export default {
         "Arsitek",
         "Guru",
         "Pengacara"
-      ]
+      ],
+      data: null
     };
+  },
+
+  mounted(){
+    this.$set(this, 'data', this.$store.getters.getBiodata)
+  },
+
+  methods: {
+    onSubmit() {    
+      const self = this
+      self.data.beA = self.model
+      register.updateUserBiodata(window, self.data)
+          .then(function (result) {
+              if (!result) {
+                  self.$q.notify({
+                      color: "red-5",
+                      textColor: "white",
+                      icon: "fas fa-exclamation-triangle",
+                      message: "Failed to update Biodata. Please Try Again!",
+                      position: "top",
+                      timeout: 500
+                  });
+          
+              } else {
+                  self.$q.notify({
+                      color: "green-4",
+                      textColor: "white",
+                      icon: "fas fa-check-circle",
+                      message: "Biodata has been update",
+                      position: "top",
+                      timeout: 500
+                  });
+                  self.$store.commit('setData', self.data)
+                  self.$router.push('/preMenu2')
+              }
+          })
+          .catch(function (err) {
+              console.log(err);
+          });
+      }
+
   }
 };
 </script>

@@ -27,36 +27,36 @@
         </div>
         <q-form class="q-gutter-md">
           <p class="fusual">Nama Lengkap</p>
-          <q-input rounded outlined size="md" />
+          <q-input rounded outlined size="md" v-model="data.nama" />
           <p class="fusual">No. WhatsApp</p>
-          <q-input rounded outlined />
+          <q-input rounded outlined v-model="data.notelp" />
           <p class="fusual">Email</p>
-          <q-input rounded outlined bg-color="grey-4" />
+          <q-input rounded outlined bg-color="grey-4" v-model="data.email" />
           <!-- <div class="row">
             <div class="col-8">
               <p class="fusual2">Alamat</p>
-              <q-input rounded outlined />
+              <q-input rounded outlined v-model="alamat"/>
             </div>
             <div class="col">
               <p class="fusual2">Kode Pos</p>
-              <q-input rounded outlined />
+              <q-input rounded outlined v-model="kodepos"/>
             </div>
           </div>-->
           <p class="fusual">Sekolah</p>
-          <q-input rounded outlined />
+          <q-input rounded outlined v-model="data.sekolah"/>
           <div class="row">
             <div class="col">
               <p class="fusual2">Tingkat</p>
-              <q-select rounded outlined v-model="model" :options="options" />
+              <q-select rounded outlined v-model="data.tingkat" :options="options"/>
             </div>
             <div class="col">
               <p class="fusual2">Kelas</p>
-              <q-select rounded outlined v-model="model2" :options="option2" />
+              <q-select rounded outlined v-model="data.kelas" :options="option2" />
             </div>
           </div>
 
           <center>
-            <q-btn unelevated rounded color="grey" label="Simpan" style="width: 90%" to="/preMenu" />
+            <q-btn unelevated rounded color="grey" label="Simpan" style="width: 90%" @click="onSubmit()"/>
           </center>
         </q-form>
       </q-card-section>
@@ -93,14 +93,65 @@
 }
 </style>
 <script>
+
+import register from "../../api/auth/index";
 export default {
   data() {
     return {
-      model: null,
-      model2: null,
+      data : {
+        nama: null,
+        notelp: null,
+        email: null,
+        alamat: "",
+        kodepos: "",
+        sekolah: null,
+        tingkat: null,
+        kelas: null,
+        beA: "",
+        toSay: ""
+      },
       options: ["SD", "SMP", "SMA"],
       option2: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
-    };
+      
+    }
+  },
+
+
+  methods: {
+    onSubmit() {    
+      const self = this
+      register.registerUser(window, self.data)
+          .then(function (result) {
+              if (!result) {
+                  self.$q.notify({
+                      color: "red-5",
+                      textColor: "white",
+                      icon: "fas fa-exclamation-triangle",
+                      message: "Failed to create data. Please Try Again!",
+                      position: "top",
+                      timeout: 500
+                  });
+          
+              } else {
+                  self.$q.notify({
+                      color: "green-4",
+                      textColor: "white",
+                      icon: "fas fa-check-circle",
+                      message: "Data has been create",
+                      position: "top",
+                      timeout: 500
+                  });
+
+                  self.$store.commit('setData', self.data)
+                  
+                  self.$router.push('/preMenu')
+              }
+          })
+          .catch(function (err) {
+              console.log(err);
+          });
+      }
+
   }
 };
 </script>
