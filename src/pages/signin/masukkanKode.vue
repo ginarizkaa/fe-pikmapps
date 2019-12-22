@@ -9,16 +9,16 @@
     <div class="flex flex-center q-pt-lg q-pb-md">
       <div class="row">
         <div class="col q-px-sm">
-          <q-input style="width:40px;" filled v-model="kode1" bg-color="grey-5" :dense="dense" />
+          <q-input style="width:40px;" filled v-model="kode1" bg-color="grey-5" :dense="dense" maxlength="1" />
         </div>
         <div class="col q-px-sm">
-          <q-input style="width:40px;" filled v-model="kode2" bg-color="grey-5" :dense="dense" />
+          <q-input style="width:40px;" filled v-model="kode2" bg-color="grey-5" :dense="dense" maxlength="1" />
         </div>
         <div class="col q-px-sm">
-          <q-input style="width:40px;" filled v-model="kode3" bg-color="grey-5" :dense="dense" />
+          <q-input style="width:40px;" filled v-model="kode3" bg-color="grey-5" :dense="dense" maxlength="1" />
         </div>
         <div class="col q-px-sm">
-          <q-input style="width:40px;" filled v-model="kode4" bg-color="grey-5" :dense="dense" />
+          <q-input style="width:40px;" filled v-model="kode4" bg-color="grey-5" :dense="dense" maxlength="1" />
         </div>
       </div>
     </div>
@@ -68,6 +68,7 @@
 export default {
   data() {
     return {
+      dense:'',
       kode1: "",
       kode2: "",
       kode3: "",

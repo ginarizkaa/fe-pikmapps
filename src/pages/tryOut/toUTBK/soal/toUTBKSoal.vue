@@ -23,7 +23,7 @@
       <img src="statics/img/soal.png" />
     </div>
     <div class="q-mt-xl ctr">
-      <q-btn v-for="(item) in items" v-bind:key="item" color="blue-grey-4" disable class="q-ma-xs">
+      <q-btn v-for="(item) in items" v-bind:key="item" color="blue-grey-4" class="q-ma-xs">
         <div class="font3 dark-blue fs2">{{item}}</div>
       </q-btn>
     </div>
