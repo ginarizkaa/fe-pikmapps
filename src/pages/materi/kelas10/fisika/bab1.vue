@@ -1,7 +1,7 @@
 <template>
   <div>
     <q-img src="statics/img/materi/kelas10/fisika/bab1.1.jpg" />
-    <pdf src="/statics/pdfpdf-test.pdf"></pdf>
+    <pdf src="/statics/pdf/pdf-test.pdf"></pdf>
     <div style="text-align:center">
       <q-btn
         unelevated
