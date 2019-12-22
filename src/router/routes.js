@@ -179,6 +179,11 @@ const routes = [
         name: 'rapor'
       },
       {
+        path: '/bahas/:title',
+        component: () => import('pages/rapor/bahas.vue'),
+        name: 'rapor'
+      },
+      {
         path: '/grafik/:title',
         component: () => import('pages/rapor/grafik.vue'),
         name: 'global'

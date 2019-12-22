@@ -1,16 +1,24 @@
 <template>
-  <div>
-    <div v-if="homediv">
-      <q-card class="q-ma-lg card2">
-        <div class="row">
-          <div class="col">
-            <div class="q-mt-md q-ml-md font8 fs20">Penilaian</div>
-            <grid title="TPS" benar="30" salah="40" waktu="01:20" page="/" />
-            <div style="height:2px; background-color:grey;margin-bottom:5px" class="q-ml-md" />
-            <grid title="TKA" benar="30" salah="40" waktu="01:20" page="/" />
-          </div>
-          <div class="col">
-            <img src="statics/img/g1.png" class="imganaksma" />
+<div>
+  <div v-if="homediv">
+    <q-card class="q-ma-lg card2">
+      <div class="row">
+        <div class="col">
+          <div class="q-mt-md q-ml-md font8 fs20">Penilaian</div>
+          <grid title="TPS" benar="30" salah="40" waktu="01:20" :page="`/bahas/${$route.params.title}`" />
+          <div style="height:2px; background-color:grey;margin-bottom:5px" class="q-ml-md" />
+          <grid title="TKA" benar="30" salah="40" waktu="01:20" :page="`/bahas/${$route.params.title}`" />
+        </div>
+        <div class="col">
+          <img src="statics/img/g1.png" class="imganaksma" />
+        </div>
+      </div>
+    </q-card>
+    <q-card class="q-ma-lg card4">
+      <div class="row">
+        <div class="col">
+          <div class="q-ma-md">
+            <img src="statics/img/confetti.png" />
           </div>
         </div>
       </q-card>
