@@ -1,14 +1,14 @@
 <template>
   <div>
     <div class="flex flex-center">
-      <q-card class="my-cardgrit q-mt-lg">
+      <q-card class="my-cardkenaldiri q-mt-lg q-mx-md">
         <q-card-section class="bg-grey-12 font2 fs20 blue" style="height:50px">
           <div style="margin-top:-7px" class="ctr">KAMU ITU SPESIAL!</div>
         </q-card-section>
         <q-separator />
 
         <q-item>
-            PDF
+            <pdf src="/statics/pdf/pdf-test.pdf" width="100%"></pdf>
           <!-- <q-item-section avatar>
             <q-avatar>
               <img src="https://cdn.quasar.dev/img/avatar2.jpg" />
@@ -27,20 +27,21 @@
   </div>
 </template>
 <style lang="stylus">
-.my-cardgrit {
+.my-cardkenaldiri {
   width: 100%;
-  max-width: 330px;
-  height: 115px;
+  height: auto;
 }
 </style>
 <script>
+import pdf from 'vue-pdf'
 import grid1 from "components/grit/cgrit.vue";
 import grid2 from "components/grit/cgritLock.vue";
 
 export default {
   components: {
     grid1,
-    grid2
+    grid2,
+    pdf
   },
   data() {
     return {

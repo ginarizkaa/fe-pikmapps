@@ -16,6 +16,7 @@
     "jquery": "^3.4.1",
     "quasar": "^1.4.1",
     "vue-i18n": "^8.0.0",
+    "vue-instant-pdf-viewer": "^1.0.2",
     "vue-pdf": "^4.0.7"
   },
   "devDependencies": {
