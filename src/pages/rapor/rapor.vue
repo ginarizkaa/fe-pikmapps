@@ -33,15 +33,6 @@
               <img src="statics/img/confetti.png" />
             </div>
           </div>
-        </div>
-      </q-card>
-      <q-card class="q-ma-lg card4">
-        <div class="row">
-          <div class="col">
-            <div class="q-ma-md">
-              <img src="statics/img/confetti.png" />
-            </div>
-          </div>
           <div class="col q-ma-md" style="text-align:center">
             <div style="margin-top:-5px">
               <label class="font3 fs30">SCORE</label>
@@ -313,10 +304,11 @@ export default {
       ],
       model: null,
       options: [
-        "Kategori",
-        "Score Tertinggi",
-        "Score Terendah",
-        "Waktu Tercepat"
+        "Sesuai Univ Pil 1",
+        "Sesuai Univ Pil 2",
+        "Sesuai Jurusan Pil 1",
+        "Sesuai Jurusan Pil 2",
+        "Tampilkan Semua"
       ]
     };
   },

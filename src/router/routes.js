@@ -33,6 +33,10 @@ const routes = [
     component: () => import('pages/menu/temanPikma.vue')
   },
   {
+    path: '/susunJadwal',
+    component: () => import('pages/susunJadwal/susunJadwal.vue')
+  },
+  {
     path: '',
     component: () => import('layouts/layout.vue'),
     children : [
@@ -181,6 +185,11 @@ const routes = [
       {
         path: '/bahas/:title',
         component: () => import('pages/rapor/bahas.vue'),
+        name: 'rapor'
+      },
+      {
+        path: '/pembahasan/:title',
+        component: () => import('pages/rapor/pembahasan.vue'),
         name: 'rapor'
       },
       {

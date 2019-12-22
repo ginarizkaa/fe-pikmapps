@@ -40,10 +40,10 @@
     </div>
     <div class="row flex flex-center q-pt-lg">
       <div class="q-ma-xs">
-        <grid title="Modul" height="70" width="80" imgurl="statics/img/g12.png" page="/modul/Modul" />
+        <grid2 title="Modul" height="70" width="80" imgurl="statics/img/g12.png" page="/modul/Modul" />
       </div>
       <div class="q-ma-xs">
-        <grid title="Post Test" height="70" width="80" imgurl="statics/img/g13.png" page="/pt/Post Test" />
+        <grid2 title="Post Test" height="70" width="80" imgurl="statics/img/g13.png" page="/pt/Post Test" />
       </div>
       <div class="q-ma-xs">
         <grid title="Try Out" height="70" width="80" imgurl="statics/img/g16.png" page="/tryOut" />
@@ -53,8 +53,11 @@
       <div class="q-ma-xs">
         <grid title="Bank Soal" height="70" width="80" imgurl="statics/img/g15.png" page="/bankSoal/Bank Soal" />
       </div>
-      <div class="q-ma-xs">
+      <div class="q-ma-xs" v-if="trial=false">
         <grid title="Konsul" height="70" width="80" imgurl="statics/img/g14.png" page="/" />
+      </div>
+      <div class="q-ma-xs" v-if="trial=true">
+        <grid2 title="Konsul" height="70" width="80" imgurl="statics/img/g14.png" page="/" />
       </div>
       <div class="q-ma-xs">
         <grid title="Rapor" height="70" width="60" imgurl="statics/img/g17.png" page="/history/Rapor" />
@@ -64,13 +67,16 @@
 </template>
 <script>
 import grid from "components/menu/button.vue";
+import grid2 from "components/menu/buttonLock.vue";
 export default {
   components: {
-    grid
+    grid,
+    grid2
   },
   data() {
     return {
-      slide: "style"
+      slide: "style",
+      trial: true
     };
   },
   methods: {
