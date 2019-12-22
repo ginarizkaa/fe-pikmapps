@@ -1,6 +1,7 @@
 <template>
   <div>
     <q-img src="statics/img/materi/kelas10/fisika/bab1.1.jpg" />
+    <pdf src="/statics/pdf/pdf-test.pdf"></pdf>
     <div style="text-align:center">
       <q-btn
         unelevated
@@ -16,7 +17,11 @@
 </template>
 
 <script>
+import pdf from 'vue-pdf'
 export default {
+  components: {
+    pdf
+  },
   methods: {
     navigate() {
       let self = this;
