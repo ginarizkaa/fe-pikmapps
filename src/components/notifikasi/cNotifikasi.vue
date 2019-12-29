@@ -15,7 +15,7 @@
     <q-item v-if="`${status}` === 'Unread' || `${status}` === 'unread'">
       <q-item-section avatar>
         <q-avatar square style="height:30px;width:30px">
-          <img src="statics/icon/bullet.png" />
+          <img src="statics/icon/notifUnread.png" />
         </q-avatar>
       </q-item-section>
 

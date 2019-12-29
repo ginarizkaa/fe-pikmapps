@@ -32,10 +32,7 @@ const routes = [
     path: '/temanPikma',
     component: () => import('pages/menu/temanPikma.vue')
   },
-  {
-    path: '/susunJadwal',
-    component: () => import('pages/susunJadwal/susunJadwal.vue')
-  },
+  
   {
     path: '',
     component: () => import('layouts/layout.vue'),
@@ -295,6 +292,11 @@ const routes = [
         path: '/notif/:title',
         component: () => import('pages/notifikasi/notifikasi.vue'),
         name: 'notif'
+      },
+      {
+        path: '/susunJadwal/:title',
+        component: () => import('pages/susunJadwal/susunJadwal.vue'),
+        name: 'global'
       },
       
     ]
