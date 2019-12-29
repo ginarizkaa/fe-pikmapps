@@ -119,9 +119,7 @@ export default {
   data() {
     return {
       slide: "style",
-      trial: true,
-      formattedString : '',
-      formattedString2 : undefined
+      trial: true
     };
   },
   methods: {
