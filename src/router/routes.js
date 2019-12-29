@@ -293,11 +293,6 @@ const routes = [
         component: () => import('pages/notifikasi/notifikasi.vue'),
         name: 'notif'
       },
-      {
-        path: '/susunJadwal/:title',
-        component: () => import('pages/susunJadwal/susunJadwal.vue'),
-        name: 'global'
-      },
       
     ]
   },
