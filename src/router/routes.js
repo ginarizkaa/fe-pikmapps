@@ -140,7 +140,7 @@ const routes = [
         component: () => import('pages/tryOut/tryOut.vue')
       },
       {
-        path: '/kodeTO',
+        path: '/kodeTO/:title/:caption/:price',
         component: () => import('pages/tryOut/kodeTO.vue')
       },
       {

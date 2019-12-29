@@ -8,7 +8,7 @@
         class="font4 q-ma-sm"
         style="width: 60%;"
         text-color="black"
-        to="/belajar"
+        @click="beli()"
       />
       <q-btn
         unelevated
@@ -18,7 +18,7 @@
         class="font4 q-ma-sm"
         style="width: 60%; "
         text-color="black"
-        to="/belajar"
+        to="/temanPikma"
       />
       <q-btn
         unelevated
@@ -28,7 +28,18 @@
         class="font4 q-ma-sm"
         style="width: 60%; margin-top:30px "
         text-color="black"
-        to="/belajar"
+        to="/masukkanKode"
       />
     </div>
 </template>
+<script>
+export default {
+  methods : {
+    beli() {
+      let self = this
+      console.log ("ini route", this.$route.params.title)
+      self.$router.push("/temanPikma/"+this.$route.params.title+"/"+this.$route.params.caption+"/"+this.$route.params.price)
+    }
+  }
+}
+</script>

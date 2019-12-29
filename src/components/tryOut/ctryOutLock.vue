@@ -1,5 +1,5 @@
 <template>
-  <q-card class="tryOut" @click="navigate()">
+  <q-card class="tryOut">
     <div class="row items-center">
       <div class="col-7">
         <q-item>
@@ -33,13 +33,9 @@ export default {
     caption: ""
   },
   methods: {
-    navigate() {
-      let self = this;
-      self.$router.push({ path: self.page });
-    },
     daftarTO() {
       let self = this;
-      self.$router.push("/kodeTO");
+      self.$router.push({ path: self.page });
     }
   }
 };
